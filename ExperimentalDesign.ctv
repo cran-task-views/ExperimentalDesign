@@ -1,0 +1,95 @@
+<CRANTaskView>
+
+<name>DoE</name>
+
+<topic>Design of Experiments &amp; Analysis of Experimental Data</topic>
+<maintainer>&lt;a href="http://www.tfh-berlin.de/~groemp"&gt;Ulrike Groemping&lt;/a&gt;</maintainer>
+<info> This task view collects information on packages for experimental design and analysis of data from experiments. This is a first version of this task view, and it is likely that I have overlooked functionalities, so please feel free to suggest enhancements. Also, please send information on new packages if you think they belong here.
+
+<p>There are a few packages for <b>creating and analyzing experimental designs for general purposes:</b> First of all, the standard (generalized) linear model functions in the core package <pkg>stats</pkg> are of course very important for analyzing data from designed experiments (especially functions lm(), aov() and the methods and functions for the resulting linear model objects). These are concisely explained in Kuhnert and Venables (2005, p.109 ff.); Vikneswaran (2005) points out specific usages for experimental design (using function contrasts(), multiple comparison functions and some convenience functions like model.tables(), replications() and plot.design()).  <pkg>AlgDesign</pkg> creates full factorial designs with or without additional quantitative variables, creates mixture designs (i.e. designs where the levels of factors sum to 1=100%) and creates D-, A-, or I-optimal designs exactly or approximately.  <pkg>conf.design</pkg> allows to create a design with certain interaction effects confounded with blocks (function conf.design) and allows to combine existing designs in several ways (useful e.g. for Taguchi's inner and outer array designs in industrial experimentation).  <pkg> blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets of blocks in case of too small block sizes.</p> 
+
+<p>Some further packages especially handle designs for <b>industrial experiments</b> that are often highly fractionated, intentionally confounded and have few extra degrees of freedom for error: <pkg>BHH2</pkg> (function ffDesignMatrix) generates full and fractional factorial two-level-designs from a number of factors and a list of defining relations.  It also provides several functions for analyzing data from such experiments: The function anovaPlot assesses effect sizes relative to residuals, and the function lambdaPlot assesses the effect of BoxCox-transformations on statistical significance of effects.  <pkg>BsMD</pkg> provides Bayesian charts as proposed by Box and Meyer (1986) as well as effects plots (normal, half-normal and Lenth) for assessing which effects are active in a fractional factorial experiment with 2-level factors.  
+<pkg>FrF2</pkg> provides a modified version of the normal and half-normal effects plots from <pkg>BsMD</pkg>.  Furthermore, it provides main effects plots and interaction plot matrices similar to those in Minitab software and shows the alias structure for fractional factorials of 2-level factors in a human-reader friendly way.</p>
+
+<p>Various further packages handle <b>special situations in experimental design:</b> <pkg>lhs</pkg> provides latin hypercube designs which are especially useful for computer experimentation whenever changing levels is cheap so that factors can have many different levels. Furthermore, the package provides ways to analyse such computer experiments with emphasis on what follow-up experiments to conduct.  <pkg>desirability</pkg> provides ways to combine several target criteria into a desirability function in order to simplify multi-criteria analysis.  <pkg>experiment</pkg> contains tools for clinical experiments, e.g. a randomization tool, and it provides a few special analysis options for clinical trials.  <pkg>ldDesign</pkg> suggests appropriate designs for linkage equilibrium studies, <pkg>qtlDesign</pkg> offers designs for quantitative trait locus experiments.  <pkg>crossdes</pkg> creates and analyses cross-over designs of various types (including latin squares, mutually orthogonal latin squares and Youden squares) that can for example be used in sensometrics.  Package <pkg>SensoMineR</pkg> contains special designs for sensometric studies, e.g. for the triangle test. </p>
+
+
+<p>A few references from the above packages:</p>
+<ul>
+    <p>Atkinson, A.C. and Donev, A.N. (1992). <i>Optimum experimental designs</i>. Oxford: Clarendon Press.</p>
+
+    <p>Ball, R.D. (2005). Experimental designs for reliable detection of linkage disequilibrium in unstructured
+    random population association studies. <i>Genetics</i> <b>170</b>, 859-873.</p>
+    
+    <p>Box G. E. P, Hunter, W. C. and Hunter, J. S. (2005). <i>Statistics for Experimenters</i> (2nd edition). 
+    New York: Wiley.</p>
+    
+    <p>Box, G. E. P and R. D. Meyer (1986). An Analysis for Unreplicated Fractional Factorials. <i>Technometrics</i>
+    <b>28</b>, 11-18.</p>
+
+    <p>Box, G. E. P and R. D. Meyer (1993). Finding the Active Factors in Fractionated Screening
+    Experiments. <i>Journal of Quality Technology</i> <b>25</b>, 94-105.</p>
+
+    <p>Collings, B. J. (1989). Quick confounding. <i>Technometrics</i> <b>31</b>, 107-110.</p>
+
+    <p>Daniel, C. (1959). 
+    Use of Half Normal Plots in Interpreting Two Level Experiments.
+    <i>Technometrics</i> <b>1</b>, 311-340.</p>
+    
+    <p>Derringer, G. and Suich, R. (1980). Simultaneous Optimization of Several Response Variables.
+    <i>Journal of Quality Technology</i> <b>12</b>, 214-219.</p>
+
+    <p>Federov, V.V. (1972). <i>Theory of optimal experiments</i>. New York: Academic Press.</p>
+
+    <p>Jones, B. and Kenward, M.G. (1989): <i>Design and Analysis of Cross-Over Trials</i>. Chapman and
+    Hall, London.</p>
+    
+     Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical Modelling &amp; Computing</i>. <a href="http://cran.r-project.org/doc/contrib/Kuhnert+Venables-R_Course_Notes.zip"> Download a 360 page PDF document of lecture notes in combination with the data sets and R scripts used in the manuscript</a>.
+    
+    <p>Kunert, J. (1998): Sensory experiments as crossover studies. <i>Food Quality and Preference</i> <b>9</b>, 
+    243-253.</p>
+
+    <p>Lenth, R.V. (1989). Quick and easy analysis of unreplicated factorials.
+    <i>Technometrics</i>, <b>31</b>, 469-473.</p>
+
+    <p>Myers, R. H. and Montgomery, C. M. (1995). <i>Response Surfaces Methodology: Process and Product
+    Optimization Using Designed Experiments</i>. New York: Wiley.</p>
+    
+    <p>Sen S, Satagopan JM, Churchill GA (2005). Quantitative trait locus study design from an information
+    perspective. <i>Genetics</i> <b>170</b>, 447-464.</p>
+    
+    <p>Stein, M. (1987). Large Sample Properties of Simulations Using Latin Hypercube Sampling. <i>Technometrics</i> 
+    <b>29</b>, 143-151.</p>
+    
+    <p>Stocki, R. (2005). A method to improve design reliability using optimal Latin hypercube sampling.
+    <i>Computer Assisted Mechanics and Engineering Sciences</i> <b>12</b>, 87-105.</p>
+
+    <p>Vikneswaran (2005). <i>An R companion to "Experimental Design".</i> Available online at <a href="http://cran.r-project.org/doc/contrib/Vikneswaran-ED_companion.pdf"> http://cran.r-project.org/doc/contrib/Vikneswaran-ED_companion.pdf</a>. &lt;br&gt;The file accompanies the book "Experimental Design with Applications in Management, Engineering and the Sciences" by Berger and Maurer (2002).</p>
+
+</ul>
+
+</info>
+
+<packagelist>
+<pkg>AlgDesign</pkg>
+<pkg>BHH2</pkg>
+<pkg>BsMD</pkg>
+<pkg>blockTools</pkg>
+<pkg>conf.design</pkg>
+<pkg>crossdes</pkg>
+<pkg>desirability</pkg>
+<pkg>experiment</pkg>
+<pkg>FrF2</pkg>
+<pkg>ldDesign</pkg>
+<pkg>lhs</pkg>
+<pkg>qtlDesign</pkg>
+<pkg>SensoMineR</pkg>
+
+</packagelist>
+<links>
+     <a href="http://cran.r-project.org/doc/contrib/Kuhnert+Venables-R_Course_Notes.zip"> Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical Modelling &amp; Computing</i>. (~4MB)</a>
+    <a href="http://cran.r-project.org/doc/contrib/Vikneswaran-ED_companion.pdf"> Vikneswaran (2005). An R companion to "Experimental Design".</a>
+References to selected relevant print literature have been listed above.
+</links>
+
+</CRANTaskView>
