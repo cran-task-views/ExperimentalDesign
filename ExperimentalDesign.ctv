@@ -1,7 +1,7 @@
 <CRANTaskView>
 
 <name>ExperimentalDesign</name>
-<topic>Design of Experiments &amp; Analysis of Experimental Data</topic>
+<topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer>Ulrike Groemping</maintainer>
 
 <info><p>This task view collects information on packages for experimental design
