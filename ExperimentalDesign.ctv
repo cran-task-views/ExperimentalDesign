@@ -2,7 +2,8 @@
 
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
-<maintainer>Ulrike Groemping</maintainer>
+<maintainer email="groemping@tfh-berlin.de">Ulrike Groemping</maintainer>
+<version>2007-12-21</version>
 
 <info><p>This task view collects information on packages for experimental design
   and analysis of data from experiments. This is a first version of this task view,
