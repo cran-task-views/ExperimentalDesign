@@ -3,13 +3,13 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@tfh-berlin.de">Ulrike Groemping</maintainer>
-<version>2007-12-21</version>
+<version>2008-02-23</version>
 
 <info><p>This task view collects information on packages for experimental design
-  and analysis of data from experiments. This is a first version of this task view,
+  and analysis of data from experiments. This is an early version of this task view,
   and it is likely that I have overlooked functionalities, so please feel free to
-  suggest enhancements. Also, please send information on new packages if you think
-  they belong here. Contact details are given on my
+  suggest enhancements. Also, please send information on new packages or major 
+  package updates if you think they belong here. Contact details are given on my
   <a href="http://www.tfh-berlin.de/~groemp/">Web page</a>.</p>
 
   <p>There are a few packages for <b>creating and analyzing experimental designs
@@ -32,7 +32,7 @@
 
   <p>Some further packages especially handle designs for <b>industrial experiments</b>
   that are often highly fractionated, intentionally confounded and have few extra degrees
-  of freedom for error: <pkg>BHH2</pkg> (function  <tt>ffDesignMatrix()</tt>) generates
+  of freedom for error: <pkg>BHH2</pkg> (function  <tt>ffDesMatrix()</tt>) generates
   full and fractional factorial two-level-designs from a number of factors and a list of
   defining relations.  It also provides several functions for analyzing data from such
   experiments: The function anovaPlot assesses effect sizes relative to residuals, and
@@ -42,8 +42,9 @@
   Lenth) for assessing which effects are active in a fractional factorial experiment
   with 2-level factors. <pkg>FrF2</pkg> provides a modified version of the normal and
   half-normal effects plots from <pkg>BsMD</pkg>. Furthermore, it provides main effects
-  plots and interaction plot matrices similar to those in Minitab software and shows the
-  alias structure for fractional factorials of 2-level factors in a human-reader friendly way.</p>
+  plots and interaction plot matrices similar to those in Minitab software and a cube 
+  plot for the combinations of three factors. Finally, it shows the alias structure 
+  for fractional factorials of 2-level factors in a human-reader friendly way.</p>
 
   <p>Various further packages handle <b>special situations in experimental design:</b>
   <pkg>lhs</pkg> provides latin hypercube designs which are especially useful for computer
