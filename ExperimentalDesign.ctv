@@ -15,28 +15,28 @@
   <p>There are a few packages for <b>creating and analyzing experimental designs
   for general purposes:</b> First of all, the standard (generalized) linear model
   functions in the base package stats are of course very important for analyzing
-  data from designed experiments (especially functions <tt>lm()</tt>, <tt>aov()</tt>
+  data from designed experiments (especially functions <code>lm()</code>, <code>aov()</code>
   and the methods and functions for the resulting linear model objects). These are
   concisely explained in Kuhnert and Venables (2005, p. 109 ff.); Vikneswaran (2005)
-  points out specific usages for experimental design (using function <tt>contrasts()</tt>,
-  multiple comparison functions and some convenience functions like <tt>model.tables()</tt>,
-  <tt>replications()</tt> and <tt>plot.design()</tt>). <pkg>AlgDesign</pkg> creates full
+  points out specific usages for experimental design (using function <code>contrasts()</code>,
+  multiple comparison functions and some convenience functions like <code>model.tables()</code>,
+  <code>replications()</code> and <code>plot.design()</code>). <pkg>AlgDesign</pkg> creates full
   factorial designs with or without additional quantitative variables, creates mixture
   designs (i.e., designs where the levels of factors sum to 1=100%) and creates
   D-, A-, or I-optimal designs exactly or approximately. <pkg>conf.design</pkg> allows
   to create a design with certain interaction effects confounded with blocks (function
-  <tt>conf.design()</tt>) and allows to combine existing designs in several ways
+  <code>conf.design()</code>) and allows to combine existing designs in several ways
   (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation).
   <pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
   of blocks in case of too small block sizes.</p> 
 
   <p>Some further packages especially handle designs for <b>industrial experiments</b>
   that are often highly fractionated, intentionally confounded and have few extra degrees
-  of freedom for error: <pkg>BHH2</pkg> (function  <tt>ffDesMatrix()</tt>) generates
+  of freedom for error: <pkg>BHH2</pkg> (function  <code>ffDesMatrix()</code>) generates
   full and fractional factorial two-level-designs from a number of factors and a list of
   defining relations.  It also provides several functions for analyzing data from such
   experiments: The function anovaPlot assesses effect sizes relative to residuals, and
-  the function <tt>lambdaPlot()</tt> assesses the effect of Box-Cox transformations on
+  the function <code>lambdaPlot()</code> assesses the effect of Box-Cox transformations on
   statistical significance of effects. <pkg>BsMD</pkg> provides Bayesian charts as
   proposed by Box and Meyer (1986) as well as effects plots (normal, half-normal and
   Lenth) for assessing which effects are active in a fractional factorial experiment
