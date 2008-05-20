@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@tfh-berlin.de">Ulrike Groemping</maintainer>
-<version>2008-03-26</version>
+<version>2008-05-20</version>
 
 <info><p>This task view collects information on packages for experimental design
   and analysis of data from experiments. This is an early version of this task view,
@@ -29,6 +29,15 @@
   (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation).
   <pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
   of blocks in case of too small block sizes.</p> 
+
+  <p><pkg>agricolae</pkg> offers extensive functionality on experimental design 
+  especially for <b>agricultural and plant breeding experiments</b>, which can also be useful 
+  for other purposes. It supports <b>planning</b> of lattice designs, factorial designs, 
+  randomized complete block designs, completely randomized designs, 
+  (Graeco-)Latin square designs, balanced incomplete block designs and alpha designs. 
+  There are also various <b>analysis</b> facilities for experimental data, e.g. treatment 
+  comparison procedures and several non-parametric tests, but also some quite specialized 
+  possibilities for specific types of experiments.</p>
 
   <p>Some further packages especially handle designs for <b>industrial experiments</b>
   that are often highly fractionated, intentionally confounded and have few extra degrees
@@ -123,6 +132,7 @@
 </info>
 
 <packagelist>
+  <pkg priority="core">agricolae</pkg>
   <pkg priority="core">AlgDesign</pkg>
   <pkg priority="core">BHH2</pkg>
   <pkg>BsMD</pkg>
