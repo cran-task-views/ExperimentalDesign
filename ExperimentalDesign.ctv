@@ -3,12 +3,11 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@tfh-berlin.de">Ulrike Groemping</maintainer>
-<version>2008-05-20</version>
+<version>2008-10-14</version>
 
 <info><p>This task view collects information on packages for experimental design
-  and analysis of data from experiments. This is an early version of this task view,
-  and it is likely that I have overlooked functionalities, so please feel free to
-  suggest enhancements. Also, please send information on new packages or major 
+  and analysis of data from experiments. Please feel free to
+  suggest enhancements, and please send information on new packages or major 
   package updates if you think they belong here. Contact details are given on my
   <a href="http://prof.tfh-berlin.de/groemping/">Web page</a>.</p>
 
@@ -20,7 +19,9 @@
   concisely explained in Kuhnert and Venables (2005, p. 109 ff.); Vikneswaran (2005)
   points out specific usages for experimental design (using function <code>contrasts()</code>,
   multiple comparison functions and some convenience functions like <code>model.tables()</code>,
-  <code>replications()</code> and <code>plot.design()</code>). <pkg>AlgDesign</pkg> creates full
+  <code>replications()</code> and <code>plot.design()</code>). <pkg>granova</pkg> 
+  offers some interesting non-standard graphical representations for results of simply-structured 
+  experiments (one-way and two-way layouts, paired data). <pkg>AlgDesign</pkg> creates full
   factorial designs with or without additional quantitative variables, creates mixture
   designs (i.e., designs where the levels of factors sum to 1=100%) and creates
   D-, A-, or I-optimal designs exactly or approximately. <pkg>conf.design</pkg> allows
@@ -98,6 +99,9 @@
 
     <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. New York: Academic Press.</li>
 
+    <li>Hoaglin D., Mosteller F. and Tukey J. (eds., 1991). <i>Fundamentals of Exploratory Analysis of Variance</i>. 
+    Wiley, New York. 
+
     <li>Jones, B. and Kenward, M.G. (1989). <i>Design and Analysis of Cross-Over Trials</i>. Chapman and
     Hall, London.</li>
     
@@ -114,6 +118,8 @@
     <li>Myers, R. H. and Montgomery, C. M. (1995). <i>Response Surfaces Methodology: Process and Product
     Optimization Using Designed Experiments</i>. New York: Wiley.</li>
     
+    <li>Rosenbaum, P. (1989). Exploratory Plots for Paired Data. <i>The American Statistician</i> <b>43</b>, 108-109.</li> 
+
     <li>Sen S, Satagopan JM, Churchill GA (2005). Quantitative Trait Locus Study Design from an Information
     Perspective. <i>Genetics</i> <b>170</b>, 447-464.</li>
     
@@ -142,6 +148,7 @@
   <pkg>desirability</pkg>
   <pkg>experiment</pkg>
   <pkg>FrF2</pkg>
+  <pkg>granova</pkg>
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
   <pkg>qtlDesign</pkg>
