@@ -5,7 +5,8 @@
 <maintainer email="groemping@tfh-berlin.de">Ulrike Groemping</maintainer>
 <version>2008-10-14</version>
 
-<info><p>This task view collects information on packages for experimental design
+<info>
+<p>This task view collects information on packages for experimental design
   and analysis of data from experiments. Please feel free to
   suggest enhancements, and please send information on new packages or major 
   package updates if you think they belong here. Contact details are given on my
@@ -71,7 +72,7 @@
   be used in sensometrics. Package <pkg>SensoMineR</pkg> contains special designs for
   sensometric studies, e.g., for the triangle test.</p>
 
-  <p><b>References</b>
+  <p><b>References</b></p>
   <ul>
     <li>Atkinson, A.C. and Donev, A.N. (1992). <i>Optimum Experimental Designs</i>.
     Oxford: Clarendon Press.</li>
@@ -100,7 +101,7 @@
     <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. New York: Academic Press.</li>
 
     <li>Hoaglin D., Mosteller F. and Tukey J. (eds., 1991). <i>Fundamentals of Exploratory Analysis of Variance</i>. 
-    Wiley, New York. 
+    Wiley, New York.</li>      
 
     <li>Jones, B. and Kenward, M.G. (1989). <i>Design and Analysis of Cross-Over Trials</i>. Chapman and
     Hall, London.</li>
@@ -134,7 +135,6 @@
     (The file accompanies the book "Experimental Design with Applications in Management, Engineering
     and the Sciences" by Berger and Maurer, 2002.)</li>
   </ul></p>
-
 </info>
 
 <packagelist>
