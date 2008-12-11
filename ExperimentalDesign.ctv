@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@tfh-berlin.de">Ulrike Groemping</maintainer>
-<version>2008-10-14</version>
+<version>2008-12-11</version>
 
 <info>
 <p>This task view collects information on packages for experimental design
@@ -55,7 +55,13 @@
   half-normal effects plots from <pkg>BsMD</pkg>. Furthermore, it provides main effects
   plots and interaction plot matrices similar to those in Minitab software and a cube 
   plot for the combinations of three factors. Finally, it shows the alias structure 
-  for fractional factorials of 2-level factors in a human-reader friendly way.</p>
+  for fractional factorials of 2-level factors in a human-reader friendly way. 
+  Apart from tools for planning and analysing factorial designs, R also offers support for 
+  response surface optimization via package <pkg>rsm</pkg>. This package supports sequential 
+  optimization with first order and second order response surface models, offering 
+  optimization approaches like steepest ascent and visualization of the response 
+  function for linear model objects. Also, coding for response surface investigations is 
+  facilitated.</p>
 
   <p>Various further packages handle <b>special situations in experimental design:</b>
   <pkg>lhs</pkg> provides latin hypercube designs which are especially useful for computer
@@ -152,6 +158,7 @@
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
   <pkg>qtlDesign</pkg>
+  <pkg>rsm</pkg>
   <pkg>SensoMineR</pkg>
 </packagelist>
 
