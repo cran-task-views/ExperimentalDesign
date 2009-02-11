@@ -78,7 +78,7 @@
   be used in sensometrics. Package <pkg>SensoMineR</pkg> contains special designs for
   sensometric studies, e.g., for the triangle test.</p>
 
-  <p><b>References</b>
+  <p><b>References</b></p>
   <ul>
     <li>Atkinson, A.C. and Donev, A.N. (1992). <i>Optimum Experimental Designs</i>.
     Oxford: Clarendon Press.</li>
@@ -140,7 +140,7 @@
     URL <a href="../../../doc/contrib/Vikneswaran-ED_companion.pdf">http://CRAN.R-project.org/doc/contrib/Vikneswaran-ED_companion.pdf</a>.
     (The file accompanies the book "Experimental Design with Applications in Management, Engineering
     and the Sciences" by Berger and Maurer, 2002.)</li>
-  </ul></p>
+  </ul>
 </info>
 
 <packagelist>
