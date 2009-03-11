@@ -2,8 +2,8 @@
 
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
-<maintainer email="groemping@tfh-berlin.de">Ulrike Groemping</maintainer>
-<version>2008-12-11</version>
+<maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
+<version>2009-03-11</version>
 
 <info>
 <p>This task view collects information on packages for experimental design
@@ -43,19 +43,25 @@
 
   <p>Some further packages especially handle designs for <b>industrial experiments</b>
   that are often highly fractionated, intentionally confounded and have few extra degrees
-  of freedom for error: <pkg>BHH2</pkg> (function  <code>ffDesMatrix()</code>) generates
+  of freedom for error: <pkg>FrF2</pkg> generates regular Fractional Factorial 
+  designs for factors with 2 levels as well as Plackett-Burman type screening designs. 
+  Regular fractional factorials default to maximum resolution minimum aberration designs; 
+  other designs can be selected by specifying generators, and work is supported by 
+  the incorporated catalogue of designs by Chen, Sun and Wu 1993. 
+  Analysis-wise, <pkg>FrF2</pkg> provides normal and half-normal effects plots 
+  (modified from <pkg>BsMD</pkg>, cf. below). Furthermore, it provides main effects
+  plots and interaction plot matrices similar to those in Minitab software and a cube 
+  plot for the combinations of three factors. Finally, it shows the alias structure 
+  for regular fractional factorials of 2-level factors in a human-reader friendly way. 
+  <pkg>BHH2</pkg> (function  <code>ffDesMatrix()</code>) generates
   full and fractional factorial two-level-designs from a number of factors and a list of
-  defining relations.  It also provides several functions for analyzing data from such
+  defining relations. It also provides several functions for analyzing data from such
   experiments: The function anovaPlot assesses effect sizes relative to residuals, and
   the function <code>lambdaPlot()</code> assesses the effect of Box-Cox transformations on
   statistical significance of effects. <pkg>BsMD</pkg> provides Bayesian charts as
   proposed by Box and Meyer (1986) as well as effects plots (normal, half-normal and
   Lenth) for assessing which effects are active in a fractional factorial experiment
-  with 2-level factors. <pkg>FrF2</pkg> provides a modified version of the normal and
-  half-normal effects plots from <pkg>BsMD</pkg>. Furthermore, it provides main effects
-  plots and interaction plot matrices similar to those in Minitab software and a cube 
-  plot for the combinations of three factors. Finally, it shows the alias structure 
-  for fractional factorials of 2-level factors in a human-reader friendly way. 
+  with 2-level factors. 
   Apart from tools for planning and analysing factorial designs, R also offers support for 
   response surface optimization via package <pkg>rsm</pkg>. This package supports sequential 
   optimization with first order and second order response surface models, offering 
@@ -96,6 +102,9 @@
     <li>Box, G. E. P and R. D. Meyer (1993). Finding the Active Factors in Fractionated Screening
     Experiments. <i>Journal of Quality Technology</i> <b>25</b>, 94-105.</li>
 
+    <li>Chen, J., Sun, D.X. and Wu, C.F.J. (1993). A catalogue of 2-level and 3-level orthogonal arrays. 
+    <i>International Statistical Review</i> <b>61</b>, 131-145.</li>
+
     <li>Collings, B. J. (1989). Quick Confounding. <i>Technometrics</i> <b>31</b>, 107-110.</li>
 
     <li>Daniel, C. (1959). Use of Half Normal Plots in Interpreting Two Level Experiments.
@@ -125,6 +134,8 @@
     <li>Myers, R. H. and Montgomery, C. M. (1995). <i>Response Surfaces Methodology: Process and Product
     Optimization Using Designed Experiments</i>. New York: Wiley.</li>
     
+    <li>Plackett, R.L.; Burman, J.P. (1946). The design of optimum multifactorial experiments. <i>Biometrika</i> <b>33</b>, 305-325.</li>
+
     <li>Rosenbaum, P. (1989). Exploratory Plots for Paired Data. <i>The American Statistician</i> <b>43</b>, 108-109.</li> 
 
     <li>Sen S, Satagopan JM, Churchill GA (2005). Quantitative Trait Locus Study Design from an Information
@@ -153,12 +164,12 @@
   <pkg>crossdes</pkg>
   <pkg>desirability</pkg>
   <pkg>experiment</pkg>
-  <pkg>FrF2</pkg>
+  <pkg priority="core">FrF2</pkg>
   <pkg>granova</pkg>
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
   <pkg>qtlDesign</pkg>
-  <pkg>rsm</pkg>
+  <pkg priority="core">rsm</pkg>
   <pkg>SensoMineR</pkg>
 </packagelist>
 
