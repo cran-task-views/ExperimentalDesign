@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2009-03-11</version>
+<version>2009-06-25</version>
 
 <info>
 <p>This task view collects information on packages for experimental design
@@ -122,7 +122,7 @@
     Hall, London.</li>
     
     <li>Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical
-    Modelling &amp; Computing</i>. URL <a href="../../../doc/contrib/Kuhnert+Venables-R_Course_Notes.zip">http://CRAN.R-project.org/doc/contrib/Kuhnert+Venables-R_Course_Notes.zip</a>.
+    Modelling &amp; Computing</i>. URL <a href="../../doc/contrib/Kuhnert+Venables-R_Course_Notes.zip">http://CRAN.R-project.org/doc/contrib/Kuhnert+Venables-R_Course_Notes.zip</a>.
     (360 page PDF document of lecture notes in combination with the data sets and R scripts)</li>
     
     <li>Kunert, J. (1998). Sensory Experiments as Crossover Studies. <i>Food Quality and Preference</i>
@@ -148,7 +148,7 @@
     <i>Computer Assisted Mechanics and Engineering Sciences</i> <b>12</b>, 87-105.</li>
 
     <li>Vikneswaran (2005). <i>An R companion to "Experimental Design".</i> 
-    URL <a href="../../../doc/contrib/Vikneswaran-ED_companion.pdf">http://CRAN.R-project.org/doc/contrib/Vikneswaran-ED_companion.pdf</a>.
+    URL <a href="../../doc/contrib/Vikneswaran-ED_companion.pdf">http://CRAN.R-project.org/doc/contrib/Vikneswaran-ED_companion.pdf</a>.
     (The file accompanies the book "Experimental Design with Applications in Management, Engineering
     and the Sciences" by Berger and Maurer, 2002.)</li>
   </ul>
@@ -174,8 +174,8 @@
 </packagelist>
 
 <links>
-  <a href="../../../doc/contrib/Kuhnert+Venables-R_Course_Notes.zip"> Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical Modelling &amp; Computing</i>. (~4MB)</a>
-  <a href="../../../doc/contrib/Vikneswaran-ED_companion.pdf"> Vikneswaran (2005). An R companion to "Experimental Design".</a>
+  <a href="../../doc/contrib/Kuhnert+Venables-R_Course_Notes.zip"> Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical Modelling &amp; Computing</i>. (~4MB)</a>
+  <a href="../../doc/contrib/Vikneswaran-ED_companion.pdf"> Vikneswaran (2005). An R companion to "Experimental Design".</a>
 </links>
 
 </CRANTaskView>
