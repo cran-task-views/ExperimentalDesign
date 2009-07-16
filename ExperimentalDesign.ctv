@@ -3,17 +3,26 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2009-06-25</version>
+<version>2009-07-16</version>
 
 <info>
-<p>This task view collects information on packages for experimental design
+<p>This task view collects information on R packages for experimental design
   and analysis of data from experiments. Please feel free to
   suggest enhancements, and please send information on new packages or major 
   package updates if you think they belong here. Contact details are given on my
   <a href="http://prof.tfh-berlin.de/groemping/">Web page</a>.</p>
+  
+  <p>Experimental design is applied in many areas, and methods have been tailored 
+  to the needs of various fields. This task view starts out with a section on 
+  the most general packages, continues with specific sections on agricultural and 
+  industrial experimentation and closes with a section on the various special 
+  experimental design packages that have been developed for specific purposes.
+  Of course, the division into fields is not always clear-cut, and some packages from 
+  the more specialized sections can also be applied in general contexts. </p>
 
-  <p>There are a few packages for <b>creating and analyzing experimental designs
-  for general purposes:</b> First of all, the standard (generalized) linear model
+  <h3>Experimental designs for general purposes</h3>
+  <p>There are a few packages for creating and analyzing experimental designs
+  for general purposes: First of all, the standard (generalized) linear model
   functions in the base package stats are of course very important for analyzing
   data from designed experiments (especially functions <code>lm()</code>, <code>aov()</code>
   and the methods and functions for the resulting linear model objects). These are
@@ -25,37 +34,51 @@
   experiments (one-way and two-way layouts, paired data). <pkg>AlgDesign</pkg> creates full
   factorial designs with or without additional quantitative variables, creates mixture
   designs (i.e., designs where the levels of factors sum to 1=100%) and creates
-  D-, A-, or I-optimal designs exactly or approximately. <pkg>conf.design</pkg> allows
+  D-, A-, or I-optimal designs exactly or approximately. <b>NOTE: Bob Wheeler, the author 
+  and maintainer of <pkg>AlgDesign</pkg>, would like to retire from this job and is looking 
+  for an "heir" whom he can entrust with continuing the package. Please contact Bob, if you 
+  are interested.</b> Package <pkg>conf.design</pkg> allows 
   to create a design with certain interaction effects confounded with blocks (function
   <code>conf.design()</code>) and allows to combine existing designs in several ways
   (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation).
   <pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
   of blocks in case of too small block sizes.</p> 
 
+  <h3>Experimental designs for agricultural and plant breeding experiments</h3>
   <p><pkg>agricolae</pkg> offers extensive functionality on experimental design 
-  especially for <b>agricultural and plant breeding experiments</b>, which can also be useful 
-  for other purposes. It supports <b>planning</b> of lattice designs, factorial designs, 
+  especially for agricultural and plant breeding experiments, which can also be useful 
+  for other purposes. It supports <i>planning</i> of lattice designs, factorial designs, 
   randomized complete block designs, completely randomized designs, 
   (Graeco-)Latin square designs, balanced incomplete block designs and alpha designs. 
-  There are also various <b>analysis</b> facilities for experimental data, e.g. treatment 
+  There are also various <i>analysis</i> facilities for experimental data, e.g. treatment 
   comparison procedures and several non-parametric tests, but also some quite specialized 
   possibilities for specific types of experiments.</p>
 
-  <p>Some further packages especially handle designs for <b>industrial experiments</b>
+  <h3>Experimental designs for industrial experiments</h3>
+  <p>Some further packages especially handle designs for industrial experiments
   that are often highly fractionated, intentionally confounded and have few extra degrees
-  of freedom for error: <pkg>FrF2</pkg> generates regular Fractional Factorial 
+  of freedom for error: <pkg>DoE.base</pkg> provides full factorial designs and some orthogonal 
+  arrays for main effects experiments (not very many yet) and 
+  provides some comfort facilities for experimental designs. It is the basis of 
+  a currently-developed suite of R-packages for experimental design (cf. Groemping 2009) 
+  and is currently needed to support package <pkg>FrF2</pkg>; 
+  while the parts that support <pkg>FrF2</pkg> work stably and are well-tested, 
+  the rest of this package is still somewhat experimental. 
+  <pkg>FrF2</pkg> generates regular Fractional Factorial 
   designs for factors with 2 levels as well as Plackett-Burman type screening designs. 
   Regular fractional factorials default to maximum resolution minimum aberration designs; 
   other designs can be selected by specifying generators, and work is supported by 
   the incorporated catalogue of designs by Chen, Sun and Wu 1993. 
   Analysis-wise, <pkg>FrF2</pkg> provides normal and half-normal effects plots 
-  (modified from <pkg>BsMD</pkg>, cf. below). Furthermore, it provides main effects
-  plots and interaction plot matrices similar to those in Minitab software and a cube 
+  (modified from <pkg>BsMD</pkg>, cf. below), provides main effects
+  plots and interaction plot matrices similar to those in Minitab software, and a cube 
   plot for the combinations of three factors. Finally, it shows the alias structure 
   for regular fractional factorials of 2-level factors in a human-reader friendly way. 
-  <pkg>BHH2</pkg> (function  <code>ffDesMatrix()</code>) generates
-  full and fractional factorial two-level-designs from a number of factors and a list of
-  defining relations. It also provides several functions for analyzing data from such
+  <pkg>BHH2</pkg> accompanies the 2nd edition of the book by Box, Hunter and Hunter 
+  and provides various of its data sets. It can generate full and fractional factorial 
+  two-level-designs from a number of factors and a list of defining relations 
+  (function <code>ffDesMatrix()</code>, less comfortable than package FrF2). 
+  It also provides several functions for analyzing data from 2-level factorial 
   experiments: The function anovaPlot assesses effect sizes relative to residuals, and
   the function <code>lambdaPlot()</code> assesses the effect of Box-Cox transformations on
   statistical significance of effects. <pkg>BsMD</pkg> provides Bayesian charts as
@@ -69,7 +92,8 @@
   function for linear model objects. Also, coding for response surface investigations is 
   facilitated.</p>
 
-  <p>Various further packages handle <b>special situations in experimental design:</b>
+  <h3>Experimental designs for special purposes</h3>
+  <p>Various further packages handle special situations in experimental design:
   <pkg>lhs</pkg> provides latin hypercube designs which are especially useful for computer
   experimentation whenever changing levels is cheap so that factors can have many different
   levels. Furthermore, the package provides ways to analyse such computer experiments with
@@ -84,7 +108,7 @@
   be used in sensometrics. Package <pkg>SensoMineR</pkg> contains special designs for
   sensometric studies, e.g., for the triangle test.</p>
 
-  <p><b>References</b></p>
+  <h3>References</h3>
   <ul>
     <li>Atkinson, A.C. and Donev, A.N. (1992). <i>Optimum Experimental Designs</i>.
     Oxford: Clarendon Press.</li>
@@ -114,6 +138,9 @@
     <i>Journal of Quality Technology</i> <b>12</b>, 214-219.</li>
 
     <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. New York: Academic Press.</li>
+    
+    <li>Groemping, U. (2009). <a href="http://www.agrocampus-ouest.fr/math/useR-2009/slides/Gromping.pdf">
+    Design of Experiments in R</a>. Presentation at UseR! 2009 in Rennes, France.</li>
 
     <li>Hoaglin D., Mosteller F. and Tukey J. (eds., 1991). <i>Fundamentals of Exploratory Analysis of Variance</i>. 
     Wiley, New York.</li>      
@@ -123,7 +150,7 @@
     
     <li>Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical
     Modelling &amp; Computing</i>. URL <a href="../../doc/contrib/Kuhnert+Venables-R_Course_Notes.zip">http://CRAN.R-project.org/doc/contrib/Kuhnert+Venables-R_Course_Notes.zip</a>.
-    (360 page PDF document of lecture notes in combination with the data sets and R scripts)</li>
+    (PDF document (about 360 pages) of lecture notes in combination with the data sets and R scripts)</li>
     
     <li>Kunert, J. (1998). Sensory Experiments as Crossover Studies. <i>Food Quality and Preference</i>
     <b>9</b>, 243-253.</li>
@@ -131,7 +158,10 @@
     <li>Lenth, R.V. (1989). Quick and Easy Analysis of Unreplicated Factorials.
     <i>Technometrics</i> <b>31</b>, 469-473.</li>
 
-    <li>Myers, R. H. and Montgomery, C. M. (1995). <i>Response Surfaces Methodology: Process and Product
+    <li>Mee, R. (2009). <i>A Comprehensive Guide to Factorial Two-Level Experimentation</i>. 
+    New York: Springer.</li>
+
+    <li>Myers, R. H. and Montgomery, C. M. (1995). <i>Response Surface Methodology: Process and Product
     Optimization Using Designed Experiments</i>. New York: Wiley.</li>
     
     <li>Plackett, R.L.; Burman, J.P. (1946). The design of optimum multifactorial experiments. <i>Biometrika</i> <b>33</b>, 305-325.</li>
@@ -157,12 +187,13 @@
 <packagelist>
   <pkg priority="core">agricolae</pkg>
   <pkg priority="core">AlgDesign</pkg>
-  <pkg priority="core">BHH2</pkg>
+  <pkg>BHH2</pkg>
   <pkg>BsMD</pkg>
   <pkg>blockTools</pkg>
   <pkg>conf.design</pkg>
   <pkg>crossdes</pkg>
   <pkg>desirability</pkg>
+  <pkg priority="core">DoE.base</pkg>
   <pkg>experiment</pkg>
   <pkg priority="core">FrF2</pkg>
   <pkg>granova</pkg>
