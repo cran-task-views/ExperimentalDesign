@@ -3,14 +3,14 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2009-07-16</version>
+<version>2009-08-27</version>
 
 <info>
 <p>This task view collects information on R packages for experimental design
   and analysis of data from experiments. Please feel free to
   suggest enhancements, and please send information on new packages or major 
   package updates if you think they belong here. Contact details are given on my
-  <a href="http://prof.tfh-berlin.de/groemping/">Web page</a>.</p>
+  <a href="http://prof.tfh-berlin.de/groemping/DoE">Web page</a>.</p>
   
   <p>Experimental design is applied in many areas, and methods have been tailored 
   to the needs of various fields. This task view starts out with a section on 
@@ -57,24 +57,34 @@
   <h3>Experimental designs for industrial experiments</h3>
   <p>Some further packages especially handle designs for industrial experiments
   that are often highly fractionated, intentionally confounded and have few extra degrees
-  of freedom for error: <pkg>DoE.base</pkg> provides full factorial designs and some orthogonal 
-  arrays for main effects experiments (not very many yet) and 
-  provides some comfort facilities for experimental designs. It is the basis of 
-  a currently-developed suite of R-packages for experimental design (cf. Groemping 2009) 
-  and is currently needed to support package <pkg>FrF2</pkg>; 
-  while the parts that support <pkg>FrF2</pkg> work stably and are well-tested, 
-  the rest of this package is still somewhat experimental. 
+  of freedom for error.</p> 
+  
+  <p>A suite of related packages (cf. Groemping 2009), 
+  <pkg>DoE.base</pkg>, <pkg>FrF2</pkg> and <pkg>DoE.wrapper</pkg>, 
+  works with the same principal syntax and output structure, for which a central feature 
+  is the class <code>design</code> for experimental design objects. 
+  <pkg>DoE.base</pkg> provides full factorial designs and some orthogonal 
+  arrays for main effects experiments (not very many yet) 
+  and provides the infrastructure for the other two packages of the suite, 
+  including a class <code>design</code> for experimental design data frames, 
+  and various methods for this class. 
   <pkg>FrF2</pkg> generates regular Fractional Factorial 
   designs for factors with 2 levels as well as Plackett-Burman type screening designs. 
-  Regular fractional factorials default to maximum resolution minimum aberration designs; 
-  other designs can be selected by specifying generators, and work is supported by 
-  the incorporated catalogue of designs by Chen, Sun and Wu 1993. 
-  Analysis-wise, <pkg>FrF2</pkg> provides normal and half-normal effects plots 
-  (modified from <pkg>BsMD</pkg>, cf. below), provides main effects
+  Regular fractional factorials default to maximum resolution minimum aberration designs 
+  and can be customized in various ways, supported by an 
+  incorporated catalogue of designs (including the designs catalogued by Chen, Sun and Wu 1993). 
+  Analysis-wise, <pkg>FrF2</pkg> provides simple graphical analysis tools (normal and half-normal effects plots 
+  (modified from <pkg>BsMD</pkg>, cf. below), main effects 
   plots and interaction plot matrices similar to those in Minitab software, and a cube 
-  plot for the combinations of three factors. Finally, it shows the alias structure 
-  for regular fractional factorials of 2-level factors in a human-reader friendly way. 
-  <pkg>BHH2</pkg> accompanies the 2nd edition of the book by Box, Hunter and Hunter 
+  plot for the combinations of three factors). It can also show the alias structure 
+  for regular fractional factorials of 2-level factors. 
+  <pkg>DoE.wrapper</pkg> brings the functionality from packages <pkg>rsm</pkg> and <pkg>lhs</pkg> (cf. also below)
+  into the context of the other two packages and adds convenience features and other possibilities
+  (especially regarding automatic choice and augmentation of the cube portion of central 
+  composite designs). It is planned (but may take some time) to also include 
+  <pkg>AlgDesign</pkg> into this package.</p>
+   
+  <p><pkg>BHH2</pkg> accompanies the 2nd edition of the book by Box, Hunter and Hunter 
   and provides various of its data sets. It can generate full and fractional factorial 
   two-level-designs from a number of factors and a list of defining relations 
   (function <code>ffDesMatrix()</code>, less comfortable than package FrF2). 
@@ -194,6 +204,7 @@
   <pkg>crossdes</pkg>
   <pkg>desirability</pkg>
   <pkg priority="core">DoE.base</pkg>
+  <pkg priority="core">DoE.wrapper</pkg>
   <pkg>experiment</pkg>
   <pkg priority="core">FrF2</pkg>
   <pkg>granova</pkg>
