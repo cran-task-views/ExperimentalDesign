@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2009-08-27</version>
+<version>2009-09-25</version>
 
 <info>
 <p>This task view collects information on R packages for experimental design
@@ -62,7 +62,10 @@
   <p>A suite of related packages (cf. Groemping 2009), 
   <pkg>DoE.base</pkg>, <pkg>FrF2</pkg> and <pkg>DoE.wrapper</pkg>, 
   works with the same principal syntax and output structure, for which a central feature 
-  is the class <code>design</code> for experimental design objects. 
+  is the class <code>design</code> for experimental design objects. A fourth package, 
+  <pkg>RcmdrPlugin.DoE</pkg> (beta version!), integrates the functionality from these three packages 
+  into the R-Commander (package <pkg>Rcmdr</pkg>, Fox 2005) for the benefit of those 
+  R users who cannot or do not want to do command line programming.<br/>
   <pkg>DoE.base</pkg> provides full factorial designs and some orthogonal 
   arrays for main effects experiments (not very many yet) 
   and provides the infrastructure for the other two packages of the suite, 
@@ -149,6 +152,10 @@
 
     <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. New York: Academic Press.</li>
     
+    <li>Fox, J. (2005). <a href="http://www.jstatsoft.org/v14/i09/paper">The R Commander: 
+    A Basic-Statistics Graphical User Interface to R</a>. 
+    <i>Journal of Statistical Software</i> <b>14</b>, Issue 9.</li>
+    
     <li>Groemping, U. (2009). <a href="http://www.agrocampus-ouest.fr/math/useR-2009/slides/Gromping.pdf">
     Design of Experiments in R</a>. Presentation at UseR! 2009 in Rennes, France.</li>
 
@@ -211,6 +218,7 @@
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
   <pkg>qtlDesign</pkg>
+  <pkg>RcmdrPlugin.DoE</pkg>
   <pkg priority="core">rsm</pkg>
   <pkg>SensoMineR</pkg>
 </packagelist>
