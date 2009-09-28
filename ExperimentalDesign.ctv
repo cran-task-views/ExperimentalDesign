@@ -65,7 +65,8 @@
   is the class <code>design</code> for experimental design objects. A fourth package, 
   <pkg>RcmdrPlugin.DoE</pkg> (beta version!), integrates the functionality from these three packages 
   into the R-Commander (package <pkg>Rcmdr</pkg>, Fox 2005) for the benefit of those 
-  R users who cannot or do not want to do command line programming.<br/>
+  R users who cannot or do not want to do command line programming.
+  <br/>
   <pkg>DoE.base</pkg> provides full factorial designs and some orthogonal 
   arrays for main effects experiments (not very many yet) 
   and provides the infrastructure for the other two packages of the suite, 
