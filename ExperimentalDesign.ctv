@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2009-09-25</version>
+<version>2010-05-28</version>
 
 <info>
 <p>This task view collects information on R packages for experimental design
@@ -40,7 +40,14 @@
   are interested.</b> Package <pkg>conf.design</pkg> allows 
   to create a design with certain interaction effects confounded with blocks (function
   <code>conf.design()</code>) and allows to combine existing designs in several ways
-  (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation).
+  (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation). 
+  Package <pkg>dae</pkg> provides various utility functions around experimental design 
+  and R factors, e.g. a randomization routine that can handle various nested structures 
+  (according to Bailey 1981) and functions for combining several factors into one 
+  or dividing one factor into several factors. 
+  Furthermore, the package provides features for post-processing 
+  objects returned by the <code>aov()</code> function, e.g. extraction of Yates effects 
+  for 2-level experiments.
   <pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
   of blocks in case of too small block sizes.</p> 
 
@@ -66,26 +73,31 @@
   <pkg>RcmdrPlugin.DoE</pkg> (beta version!), integrates the functionality from these three packages 
   into the R-Commander (package <pkg>Rcmdr</pkg>, Fox 2005) for the benefit of those 
   R users who cannot or do not want to do command line programming.<br/>
-  <pkg>DoE.base</pkg> provides full factorial designs and some orthogonal 
-  arrays for main effects experiments (not very many yet) 
+  <pkg>DoE.base</pkg> provides full factorial designs and orthogonal 
+  arrays for main effects experiments 
   and provides the infrastructure for the other two packages of the suite, 
   including a class <code>design</code> for experimental design data frames, 
-  and various methods for this class. 
+  and various methods for this class. There is also some experimental functionality 
+  for assessing the quality of orthogonal arrays.
   <pkg>FrF2</pkg> generates regular Fractional Factorial 
   designs for factors with 2 levels as well as Plackett-Burman type screening designs. 
   Regular fractional factorials default to maximum resolution minimum aberration designs 
   and can be customized in various ways, supported by an 
-  incorporated catalogue of designs (including the designs catalogued by Chen, Sun and Wu 1993). 
+  incorporated catalogue of designs (including the designs catalogued by Chen, Sun and Wu 1993, 
+  and further larger designs catalogued in Block and Mee 2005 and Xu 2009; 
+  the additional package <pkg>FrF2.catlg128</pkg> provides a very large complete catalogue 
+  for resolution IV 128 run designs with up to 23 factors for special purposes). 
   Analysis-wise, <pkg>FrF2</pkg> provides simple graphical analysis tools (normal and half-normal effects plots 
   (modified from <pkg>BsMD</pkg>, cf. below), main effects 
   plots and interaction plot matrices similar to those in Minitab software, and a cube 
   plot for the combinations of three factors). It can also show the alias structure 
   for regular fractional factorials of 2-level factors. 
-  <pkg>DoE.wrapper</pkg> brings the functionality from packages <pkg>rsm</pkg> and <pkg>lhs</pkg> (cf. also below)
-  into the context of the other two packages and adds convenience features and other possibilities
-  (especially regarding automatic choice and augmentation of the cube portion of central 
-  composite designs). It is planned (but may take some time) to also include 
-  <pkg>AlgDesign</pkg> into this package.</p>
+  <pkg>DoE.wrapper</pkg> brings some functionality from packages <pkg>rsm</pkg>, 
+  <pkg>lhs</pkg>, <pkg>DiceDesign</pkg> (cf. also below) and <pkg>AlgDesign</pkg> 
+  into the context of the other two packages and adds convenience features and 
+  other possibilities. In particular, the package allows to automatically choose the 
+  cube portion of central composite designs (CCDs) or to augment an existing cube into a CCD. 
+  </p>
    
   <p><pkg>BHH2</pkg> accompanies the 2nd edition of the book by Box, Hunter and Hunter 
   and provides various of its data sets. It can generate full and fractional factorial 
@@ -105,12 +117,26 @@
   function for linear model objects. Also, coding for response surface investigations is 
   facilitated.</p>
 
+  <h3>Experimental designs for computer experiments</h3>
+  <p>Computer experiments with quantitative factors require special types of 
+  experimental designs: it is often possible to include many different 
+  levels of the factors, and replication will usually not be beneficial. Also, the 
+  experimental region is often too large to assume that a linear or quadratic model adequately 
+  represents the phenomenon under investigation. Consequently, it is desirable to fill 
+  the experimental space with points as well as possible (space-filling designs) in such 
+  a way that each run provides additional information even if some factors turn out to be 
+  irrelevant.
+  The <pkg>lhs</pkg> package provides latin hypercube designs for this purpose. 
+  Furthermore, the package provides ways to analyse such computer experiments with
+  emphasis on what follow-up experiments to conduct. Another package with similar orientation 
+  is the <pkg>DiceDesign</pkg> package, which adds further ways to construct space-filling 
+  designs and some measures to assess the quality of designs for computer experiments. The 
+  package <pkg>DiceKriging</pkg> provides the kriging methodology which is often used for 
+  creating meta models from computer experiments.</p>
+  
   <h3>Experimental designs for special purposes</h3>
   <p>Various further packages handle special situations in experimental design:
-  <pkg>lhs</pkg> provides latin hypercube designs which are especially useful for computer
-  experimentation whenever changing levels is cheap so that factors can have many different
-  levels. Furthermore, the package provides ways to analyse such computer experiments with
-  emphasis on what follow-up experiments to conduct. <pkg>desirability</pkg> provides ways
+  <pkg>desirability</pkg> provides ways
   to combine several target criteria into a desirability function in order to simplify
   multi-criteria analysis. <pkg>experiment</pkg> contains tools for clinical experiments,
   e.g., a randomization tool, and it provides a few special analysis options for clinical
@@ -121,14 +147,21 @@
   be used in sensometrics. Package <pkg>SensoMineR</pkg> contains special designs for
   sensometric studies, e.g., for the triangle test.</p>
 
-  <h3>References</h3>
+  <h3>Key references for packages in this task view</h3>
   <ul>
     <li>Atkinson, A.C. and Donev, A.N. (1992). <i>Optimum Experimental Designs</i>.
     Oxford: Clarendon Press.</li>
 
+    <li>Bailey, R.A. (1981). A unified approach to design of experiments. 
+    <i>Journal of the Royal Statistical Society, Series A</i>
+    <b>144</b>, 214-223.</li>
+
     <li>Ball, R.D. (2005). Experimental Designs for Reliable Detection of Linkage
     Disequilibrium in Unstructured Random Population Association Studies. <i>Genetics</i>
     <b>170</b>, 859-873.</li>
+
+    <li>Block, R. and Mee, R. (2005). Resolution IV Designs with 128 Runs. 
+    <i>Journal of Quality Technology</i> <b>37</b>, 282-293. </li>
     
     <li>Box G. E. P, Hunter, W. C. and Hunter, J. S. (2005). <i>Statistics for Experimenters</i>
     (2nd edition). New York: Wiley.</li>
@@ -150,7 +183,7 @@
     <li>Derringer, G. and Suich, R. (1980). Simultaneous Optimization of Several Response Variables.
     <i>Journal of Quality Technology</i> <b>12</b>, 214-219.</li>
 
-    <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. New York: Academic Press.</li>
+    <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. Academic Press, New York.</li>
     
     <li>Fox, J. (2005). <a href="http://www.jstatsoft.org/v14/i09/paper">The R Commander: 
     A Basic-Statistics Graphical User Interface to R</a>. 
@@ -164,7 +197,10 @@
 
     <li>Jones, B. and Kenward, M.G. (1989). <i>Design and Analysis of Cross-Over Trials</i>. Chapman and
     Hall, London.</li>
-    
+
+    <li>Johnson, M.E., Moore L.M. and Ylvisaker D. (1990). Minimax and maximin distance designs. 
+    <i>Journal of Statistical Planning and Inference</i>, <b>26</b>, 131-148.</li>
+
     <li>Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical
     Modelling &amp; Computing</i>. URL <a href="../../doc/contrib/Kuhnert+Venables-R_Course_Notes.zip">http://CRAN.R-project.org/doc/contrib/Kuhnert+Venables-R_Course_Notes.zip</a>.
     (PDF document (about 360 pages) of lecture notes in combination with the data sets and R scripts)</li>
@@ -181,11 +217,17 @@
     <li>Myers, R. H. and Montgomery, C. M. (1995). <i>Response Surface Methodology: Process and Product
     Optimization Using Designed Experiments</i>. New York: Wiley.</li>
     
-    <li>Plackett, R.L.; Burman, J.P. (1946). The design of optimum multifactorial experiments. <i>Biometrika</i> <b>33</b>, 305-325.</li>
+    <li>Plackett, R.L. and Burman, J.P. (1946). The design of optimum multifactorial experiments. <i>Biometrika</i> <b>33</b>, 305-325.</li>
 
     <li>Rosenbaum, P. (1989). Exploratory Plots for Paired Data. <i>The American Statistician</i> <b>43</b>, 108-109.</li> 
 
-    <li>Sen S, Satagopan JM, Churchill GA (2005). Quantitative Trait Locus Study Design from an Information
+    <li>Sacks, J., Welch, W.J., Mitchell, T.J. and Wynn, H.P. (1989). Design and analysis of computer experiments.
+    <i>Statistical Science</i> <b>4</b>, 409-435.</li>
+
+    <li>Santner T.J., Williams B.J. and Notz W.I. (2003). <i>The Design and Analysis of Computer Experiments</i>.
+    Springer, New York.</li>
+
+    <li>Sen S, Satagopan JM and Churchill GA (2005). Quantitative Trait Locus Study Design from an Information
     Perspective. <i>Genetics</i> <b>170</b>, 447-464.</li>
     
     <li>Stein, M. (1987). Large Sample Properties of Simulations Using Latin Hypercube Sampling.
@@ -198,6 +240,10 @@
     URL <a href="../../doc/contrib/Vikneswaran-ED_companion.pdf">http://CRAN.R-project.org/doc/contrib/Vikneswaran-ED_companion.pdf</a>.
     (The file accompanies the book "Experimental Design with Applications in Management, Engineering
     and the Sciences" by Berger and Maurer, 2002.)</li>
+
+    <li>Xu, H. (2009). Algorithmic Construction of Efficient Fractional Factorial Designs With Large Run Sizes. 
+    <i>Technometrics</i> <b>51</b>, 262-277. </li>
+
   </ul>
 </info>
 
@@ -209,11 +255,15 @@
   <pkg>blockTools</pkg>
   <pkg>conf.design</pkg>
   <pkg>crossdes</pkg>
+  <pkg>dae</pkg>
   <pkg>desirability</pkg>
+  <pkg>DiceDesign</pkg>
+  <pkg>DiceKriging</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg priority="core">DoE.wrapper</pkg>
   <pkg>experiment</pkg>
   <pkg priority="core">FrF2</pkg>
+  <pkg>FrF2.catlg128</pkg>
   <pkg>granova</pkg>
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
