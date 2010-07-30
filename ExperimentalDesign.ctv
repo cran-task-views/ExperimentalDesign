@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2010-05-28</version>
+<version>2010-07-30</version>
 
 <info>
 <p>This task view collects information on R packages for experimental design
@@ -141,7 +141,6 @@
   multi-criteria analysis. <pkg>experiment</pkg> contains tools for clinical experiments,
   e.g., a randomization tool, and it provides a few special analysis options for clinical
   trials. <pkg>ldDesign</pkg> suggests appropriate designs for linkage equilibrium studies,
-  <pkg>qtlDesign</pkg> offers designs for quantitative trait locus experiments.
   <pkg>crossdes</pkg> creates and analyses cross-over designs of various types (including
   latin squares, mutually orthogonal latin squares and Youden squares) that can for example
   be used in sensometrics. Package <pkg>SensoMineR</pkg> contains special designs for
@@ -267,7 +266,6 @@
   <pkg>granova</pkg>
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
-  <pkg>qtlDesign</pkg>
   <pkg>RcmdrPlugin.DoE</pkg>
   <pkg priority="core">rsm</pkg>
   <pkg>SensoMineR</pkg>
