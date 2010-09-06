@@ -3,14 +3,14 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2010-07-30</version>
+<version>2010-09-06</version>
 
 <info>
 <p>This task view collects information on R packages for experimental design
   and analysis of data from experiments. Please feel free to
   suggest enhancements, and please send information on new packages or major 
   package updates if you think they belong here. Contact details are given on my
-  <a href="http://prof.tfh-berlin.de/groemping/DoE">Web page</a>.</p>
+  <a href="http://prof.beuth-hochschule.de/groemping/DoE">Web page</a>.</p>
   
   <p>Experimental design is applied in many areas, and methods have been tailored 
   to the needs of various fields. This task view starts out with a section on 
@@ -74,9 +74,9 @@
   into the R-Commander (package <pkg>Rcmdr</pkg>, Fox 2005) for the benefit of those 
   R users who cannot or do not want to do command line programming.<br/>
   <pkg>DoE.base</pkg> provides full factorial designs and orthogonal 
-  arrays for main effects experiments 
-  and provides the infrastructure for the other two packages of the suite, 
-  including a class <code>design</code> for experimental design data frames, 
+  arrays for main effects experiments (those listed by Kuhfeld 2009 up to 144 runs, plus a few additional ones) 
+  The package also provides the infrastructure for the other two packages of the suite, 
+  including the class <code>design</code> for experimental design data frames, 
   and various methods for this class. There is also some experimental functionality 
   for assessing the quality of orthogonal arrays.
   <pkg>FrF2</pkg> generates regular Fractional Factorial 
@@ -140,7 +140,13 @@
   to combine several target criteria into a desirability function in order to simplify
   multi-criteria analysis. <pkg>experiment</pkg> contains tools for clinical experiments,
   e.g., a randomization tool, and it provides a few special analysis options for clinical
-  trials. <pkg>ldDesign</pkg> suggests appropriate designs for linkage equilibrium studies,
+  trials. The <pkg>DoseFinding</pkg> package provides functions for the design and analysis 
+  of dose-finding experiments (for example pharmaceutical Phase II clinical trials); 
+  it combines the facilities of the <pkg>MCPMod</pkg> package (maintenance discontinued; 
+  described in Bornkamp, Pinheiro and Bretz 2009) with a special type of optimal designs for 
+  dose finding situations (MED-optimal designs, or D-optimal designs, or a mixture of both; 
+  cf., Dette et al. 2008). 
+  <pkg>ldDesign</pkg> suggests appropriate designs for linkage equilibrium studies,
   <pkg>crossdes</pkg> creates and analyses cross-over designs of various types (including
   latin squares, mutually orthogonal latin squares and Youden squares) that can for example
   be used in sensometrics. Package <pkg>SensoMineR</pkg> contains special designs for
@@ -162,6 +168,10 @@
     <li>Block, R. and Mee, R. (2005). Resolution IV Designs with 128 Runs. 
     <i>Journal of Quality Technology</i> <b>37</b>, 282-293. </li>
     
+    <li>Bornkamp B., Pinheiro J. C., and Bretz, F. (2009). 
+    <a href="http://www.jstatsoft.org/v29/i07/paper">MCPMod: An R Package for the Design and Analysis of Dose-Finding Studies</a>. 
+    <i>Journal of Statistical Software</i> <b>29</b>(7), 1-23.</li>
+    
     <li>Box G. E. P, Hunter, W. C. and Hunter, J. S. (2005). <i>Statistics for Experimenters</i>
     (2nd edition). New York: Wiley.</li>
     
@@ -182,11 +192,15 @@
     <li>Derringer, G. and Suich, R. (1980). Simultaneous Optimization of Several Response Variables.
     <i>Journal of Quality Technology</i> <b>12</b>, 214-219.</li>
 
+    <li>Dette, H., Bretz, F., Pepelyshev, A. and Pinheiro, J. C. (2008). 
+    Optimal Designs for Dose Finding Studies. <i>Journal of the American Statisical Association</i> <b>103</b>, 
+    1225-1237.</li>
+
     <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. Academic Press, New York.</li>
     
     <li>Fox, J. (2005). <a href="http://www.jstatsoft.org/v14/i09/paper">The R Commander: 
     A Basic-Statistics Graphical User Interface to R</a>. 
-    <i>Journal of Statistical Software</i> <b>14</b>, Issue 9.</li>
+    <i>Journal of Statistical Software</i> <b>14</b>(9), 1-42.</li>
     
     <li>Groemping, U. (2009). <a href="http://www.agrocampus-ouest.fr/math/useR-2009/slides/Gromping.pdf">
     Design of Experiments in R</a>. Presentation at UseR! 2009 in Rennes, France.</li>
@@ -200,6 +214,9 @@
     <li>Johnson, M.E., Moore L.M. and Ylvisaker D. (1990). Minimax and maximin distance designs. 
     <i>Journal of Statistical Planning and Inference</i>, <b>26</b>, 131-148.</li>
 
+    <li>Kuhfeld, W. (2009). Orthogonal arrays. Website courtesy of SAS Institute Inc., accessed August 4th 2010. 
+    URL <a href="http://support.sas.com/techsup/technote/ts723.html">http://support.sas.com/techsup/technote/ts723.html</a>.</li>
+
     <li>Kuhnert, P. and Venables, B. (2005) <i>An Introduction to R: Software for Statistical
     Modelling &amp; Computing</i>. URL <a href="../../doc/contrib/Kuhnert+Venables-R_Course_Notes.zip">http://CRAN.R-project.org/doc/contrib/Kuhnert+Venables-R_Course_Notes.zip</a>.
     (PDF document (about 360 pages) of lecture notes in combination with the data sets and R scripts)</li>
@@ -209,6 +226,9 @@
 
     <li>Lenth, R.V. (1989). Quick and Easy Analysis of Unreplicated Factorials.
     <i>Technometrics</i> <b>31</b>, 469-473.</li>
+
+    <li>Lenth, R.V. (2009). <a href="http://www.jstatsoft.org/v32/i07/paper">Response-Surface Methods in R, Using rsm</a>.
+    <i>Journal of Statistical Software</i> <b>32</b>(7), 1-17.</li>
 
     <li>Mee, R. (2009). <i>A Comprehensive Guide to Factorial Two-Level Experimentation</i>. 
     New York: Springer.</li>
@@ -260,6 +280,7 @@
   <pkg>DiceKriging</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg priority="core">DoE.wrapper</pkg>
+  <pkg>DoseFinding</pkg>
   <pkg>experiment</pkg>
   <pkg priority="core">FrF2</pkg>
   <pkg>FrF2.catlg128</pkg>
