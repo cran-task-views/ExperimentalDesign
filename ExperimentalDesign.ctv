@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2010-09-06</version>
+<version>2011-06-09</version>
 
 <info>
 <p>This task view collects information on R packages for experimental design
@@ -29,9 +29,16 @@
   concisely explained in Kuhnert and Venables (2005, p. 109 ff.); Vikneswaran (2005)
   points out specific usages for experimental design (using function <code>contrasts()</code>,
   multiple comparison functions and some convenience functions like <code>model.tables()</code>,
-  <code>replications()</code> and <code>plot.design()</code>). <pkg>granova</pkg> 
+  <code>replications()</code> and <code>plot.design()</code>). <pkg>GAD</pkg> handles 
+  general balanced analysis of variance models with fixed and/or random effects 
+  and also nested effects (the latter can only be random); they quote Underwood 1997 for this work.
+  The package is quite valuable, as many 
+  users have difficulties with using the R packages for handling random or mixed effects. 
+  <pkg>granova</pkg> 
   offers some interesting non-standard graphical representations for results of simply-structured 
-  experiments (one-way and two-way layouts, paired data). <pkg>AlgDesign</pkg> creates full
+  experiments (one-way and two-way layouts, paired data). 
+  
+  <pkg>AlgDesign</pkg> creates full
   factorial designs with or without additional quantitative variables, creates mixture
   designs (i.e., designs where the levels of factors sum to 1=100%) and creates
   D-, A-, or I-optimal designs exactly or approximately. <b>NOTE: Bob Wheeler, the author 
@@ -132,7 +139,9 @@
   is the <pkg>DiceDesign</pkg> package, which adds further ways to construct space-filling 
   designs and some measures to assess the quality of designs for computer experiments. The 
   package <pkg>DiceKriging</pkg> provides the kriging methodology which is often used for 
-  creating meta models from computer experiments.</p>
+  creating meta models from computer experiments, the package <pkg>DiceEval</pkg> creates 
+  and evaluates meta models (among others Kriging ones), and the package <pkg>DiceView</pkg> 
+  provides facilities for viewing sections of multidimensional meta models.</p>
   
   <h3>Experimental designs for special purposes</h3>
   <p>Various further packages handle special situations in experimental design:
@@ -255,6 +264,9 @@
     <li>Stocki, R. (2005). A Method to Improve Design Reliability Using Optimal Latin Hypercube Sampling.
     <i>Computer Assisted Mechanics and Engineering Sciences</i> <b>12</b>, 87-105.</li>
 
+    <li>Underwood, A.J. (1997). <i>Experiments in Ecology: Their Logical Design and Interpretation Using Analysis of Variance.</i>
+    Cambridge University Press, Cambridge.</li>
+
     <li>Vikneswaran (2005). <i>An R companion to "Experimental Design".</i> 
     URL <a href="../../doc/contrib/Vikneswaran-ED_companion.pdf">http://CRAN.R-project.org/doc/contrib/Vikneswaran-ED_companion.pdf</a>.
     (The file accompanies the book "Experimental Design with Applications in Management, Engineering
@@ -277,13 +289,16 @@
   <pkg>dae</pkg>
   <pkg>desirability</pkg>
   <pkg>DiceDesign</pkg>
+  <pkg>DiceEval</pkg>
   <pkg>DiceKriging</pkg>
+  <pkg>DiceView</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg priority="core">DoE.wrapper</pkg>
   <pkg>DoseFinding</pkg>
   <pkg>experiment</pkg>
   <pkg priority="core">FrF2</pkg>
   <pkg>FrF2.catlg128</pkg>
+  <pkg>GAD</pkg>
   <pkg>granova</pkg>
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
