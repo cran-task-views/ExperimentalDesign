@@ -165,7 +165,7 @@
 
   <p>Occasionally, supersaturated designs can be useful. 
   The two small packages <pkg>mkssd</pkg> and <pkg>mxkssd</pkg> provide fixed level and mixed level 
-  circular supersaturated designs.</p>
+  k-circulant supersaturated designs.</p>
 
   <h3>Experimental designs for computer experiments</h3>
   <p>Computer experiments with quantitative factors require special types of 
