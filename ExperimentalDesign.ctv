@@ -218,7 +218,7 @@
   <li><pkg>qtlDesign</pkg> is for quantitative trait locus designs,</li>
   <li>package <pkg>SensoMineR</pkg> contains special designs for
   sensometric studies, e.g., for the triangle test.</li>
-  <li>Package <pkg>supportCEs</pkg> provides tools for creating stated choice designs 
+  <li>Package <pkg>support.CEs</pkg> provides tools for creating stated choice designs 
   for market research investigations.</li>
   </ul>
   </p>
@@ -387,7 +387,7 @@
   <pkg>RcmdrPlugin.DoE</pkg>
   <pkg priority="core">rsm</pkg>
   <pkg>SensoMineR</pkg>
-  <pkg>supportCEs</pkg>
+  <pkg>support.CEs</pkg>
   <pkg>TEQR</pkg>
   <pkg>Vdgraph</pkg>
 </packagelist>
