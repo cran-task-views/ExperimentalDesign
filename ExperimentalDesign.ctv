@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2011-08-10</version>
+<version>2011-12-05</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -32,7 +32,11 @@
   concisely explained in Kuhnert and Venables (2005, p. 109 ff.); Vikneswaran (2005)
   points out specific usages for experimental design (using function <code>contrasts()</code>,
   multiple comparison functions and some convenience functions like <code>model.tables()</code>,
-  <code>replications()</code> and <code>plot.design()</code>). <pkg>GAD</pkg> handles 
+  <code>replications()</code> and <code>plot.design()</code>). Lalanne (2009) 
+  provides an R companion to the well-known book by Montgomery (2005); he so far covers the first 
+  few chapters only and (understandably!) does not keep pace with the fast development 
+  of R regarding experimental design facilities. 
+  <pkg>GAD</pkg> handles 
   general balanced analysis of variance models with fixed and/or random effects 
   and also nested effects (the latter can only be random); they quote Underwood 1997 for this work.
   The package is quite valuable, as many 
@@ -56,14 +60,15 @@
   <li>Package <pkg>crossdes</pkg> creates and analyses cross-over designs of various types (including
   latin squares, mutually orthogonal latin squares and Youden squares) that can for example
   be used in sensometrics. </li>
-  <li>Package <pkg>DoE.base</pkg> provides full factorial designs (function <code>fac.design</code>) 
-  and orthogonal arrays (function <code>oa.design</code>) for main effects experiments 
+  <li>Package <pkg>DoE.base</pkg> provides full factorial designs with or without blocking 
+  (function <code>fac.design</code>) and orthogonal arrays (function <code>oa.design</code>) 
+  for main effects experiments 
   (those listed by Kuhfeld 2009 up to 144 runs, plus a few additional ones). 
   There is also some experimental functionality 
   for assessing the quality of orthogonal arrays.<br/>
-  Package <pkg>DoE.base</pkg> also forms the basis of a suite of related packages (cf. Groemping 2009); 
-  together with <pkg>FrF2</pkg> (cf. above) and <pkg>DoE.wrapper</pkg>, it provides the work horse 
-  of the GUI package <pkg>RcmdrPlugin.DoE</pkg> (beta version!), which integrates 
+  Package <pkg>DoE.base</pkg> also forms the basis of a suite of related packages (cf. Groemping 2009). 
+  Together with <pkg>FrF2</pkg> (cf. above) and <pkg>DoE.wrapper</pkg>, it provides the work horse 
+  of the GUI package <pkg>RcmdrPlugin.DoE</pkg> (beta version; tutorial available in Groemping 2011), which integrates 
   design of experiments functionality into the R-Commander (package <pkg>Rcmdr</pkg>, Fox 2005) 
   for the benefit of those R users who cannot or do not want to do command line programming. 
   The role of package <pkg>DoE.wrapper</pkg> in that suite is to wrap 
@@ -160,8 +165,9 @@
   <p>In some industries, mixtures of ingredients are important; these require special designs, 
   because the quantitative factors have a fixed total. 
   Mixture designs are handled by packages <pkg>AlgDesign</pkg> (function <code>gen.mixture</code>, 
-  lattice designs) and <pkg>qualityTools</pkg> (function <code>mixDesign</code>, 
-  lattice designs and simplex centroid designs). </p>
+  lattice designs), <pkg>qualityTools</pkg> (function <code>mixDesign</code>, 
+  lattice designs and simplex centroid designs), and <pkg>mixexp</pkg> (several small functions for simplex centroid, 
+  simplex lattice and extreme vertices designs as well as for plotting). </p>
 
   <p>Occasionally, supersaturated designs can be useful. 
   The two small packages <pkg>mkssd</pkg> and <pkg>mxkssd</pkg> provide fixed level and mixed level 
@@ -185,6 +191,14 @@
   creating meta models from computer experiments, the package <pkg>DiceEval</pkg> creates 
   and evaluates meta models (among others Kriging ones), and the package <pkg>DiceView</pkg> 
   provides facilities for viewing sections of multidimensional meta models.</p>
+  
+  <p>Package <pkg>tgp</pkg> is another package dedicated to planning and analysing 
+  computer experiments. Here, emphasis is on Bayesian methods. 
+  The package can for example be used with various kinds of (surrogate) models for 
+  sequential optimization, e.g. with an expected improvement criterion for optimizing a noisy 
+  blackbox target function. Packages <pkg>plgp</pkg> and <pkg>dynaTree</pkg> enhance the 
+  functionality offered by <pkg>tgp</pkg> with particle learning facilities and learning for 
+  dynamic regression trees.</p>
   
   <h3>Experimental designs for clinical trials</h3>
   <p>This task view only covers specific design of experiments packages; there may be some 
@@ -282,8 +296,16 @@
     A Basic-Statistics Graphical User Interface to R</a>. 
     <i>Journal of Statistical Software</i> <b>14</b>(9), 1-42.</li>
     
+    <li>Gramacy, R.B. (2007). <a href="http://www.jstatsoft.org/v19/i09/paper">tgp: An R Package for Bayesian Nonstationary, Semiparametric Nonlinear Regression and Design by Treed Gaussian Process Models</a>.
+    <i>Journal of Statistical Software</i> <b>19</b>(9), 1-46.</li>
+
     <li>Groemping, U. (2009). <a href="http://www.agrocampus-ouest.fr/math/useR-2009/slides/Gromping.pdf">
     Design of Experiments in R</a>. Presentation at UseR! 2009 in Rennes, France.</li>
+
+    <li>Groemping, U. (2011). <a href="http://www1.beuth-hochschule.de/FB_II/reports/Report-2011-004.pdf">
+    Tutorial for designing experiments using the R package RcmdrPlugin.DoE</a>. 
+    <a href="http://www1.beuth-hochschule.de/FB_II/reports/welcome.htm">Reports in Mathematics, Physics and Chemistry</a>, 
+    Department II, Beuth University of Applied Sciences Berlin.</li>
 
     <li>Hoaglin D., Mosteller F. and Tukey J. (eds., 1991). <i>Fundamentals of Exploratory Analysis of Variance</i>. 
     Wiley, New York.</li>      
@@ -304,6 +326,11 @@
     <li>Kunert, J. (1998). Sensory Experiments as Crossover Studies. <i>Food Quality and Preference</i>
     <b>9</b>, 243-253.</li>
 
+    <li>Lalanne, C. (2009). R Companion to Montgomerys Design and Analysis of Experiments.
+    Manuscript, downloadable at URL 
+    <a href="http://www.aliquote.org/articles/tech/dae/dae.pdf">http://www.aliquote.org/articles/tech/dae/dae.pdf</a>.
+    (The file accompanies the book by Montgomery 2005 (cf. below).)</li>
+    
     <li>Lenth, R.V. (1989). Quick and Easy Analysis of Unreplicated Factorials.
     <i>Technometrics</i> <b>31</b>, 469-473.</li>
 
@@ -313,7 +340,9 @@
     <li>Mee, R. (2009). <i>A Comprehensive Guide to Factorial Two-Level Experimentation</i>. 
     New York: Springer.</li>
 
-    <li>Myers, R. H. and Montgomery, C. M. (1995). <i>Response Surface Methodology: Process and Product
+    <li>Montgomery, D. C. (2005, 6th ed.). <i>Design and Analysis of Experiments</i>. New York: Wiley.</li>
+    
+    <li>Myers, R. H. and Montgomery, D. C. (1995). <i>Response Surface Methodology: Process and Product
     Optimization Using Designed Experiments</i>. New York: Wiley.</li>
     
     <li>Plackett, R.L. and Burman, J.P. (1946). The design of optimum multifactorial experiments. <i>Biometrika</i> <b>33</b>, 305-325.</li>
@@ -367,6 +396,7 @@
   <pkg>DiceEval</pkg>
   <pkg>DiceKriging</pkg>
   <pkg>DiceView</pkg>
+  <pkg>dynaTree</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg priority="core">DoE.wrapper</pkg>
   <pkg>DoseFinding</pkg>
@@ -378,10 +408,12 @@
   <pkg>gsDesign</pkg>
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
+  <pkg>mixexp</pkg>
   <pkg>mkssd</pkg>
   <pkg>mxkssd</pkg>
   <pkg>odprism</pkg>
   <pkg>osDesign</pkg>
+  <pkg>plgp</pkg>
   <pkg>qualityTools</pkg>
   <pkg>qtlDesign</pkg>
   <pkg>RcmdrPlugin.DoE</pkg>
@@ -389,6 +421,7 @@
   <pkg>SensoMineR</pkg>
   <pkg>support.CEs</pkg>
   <pkg>TEQR</pkg>
+  <pkg>tgp</pkg>
   <pkg>Vdgraph</pkg>
 </packagelist>
 
