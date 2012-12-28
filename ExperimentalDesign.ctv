@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2012-09-08</version>
+<version>2012-12-28</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -152,8 +152,6 @@
   with the possibilities of automatically choosing the cube portion of central 
   composite designs and of augmenting 
   an existing (fractional) factorial 2-level design with a star portion. </li>
-  <li>Package <pkg>Vdgraph</pkg> implements a variance dispersion graph (Vining 1993) for response 
-  surface designs created by package <pkg>rsm</pkg>. </li>
   <li>Package <pkg>qualityTools</pkg> can also create central composite designs 
   and can visualize response surfaces.</li>
   </ul>
@@ -418,7 +416,6 @@
   <pkg>support.CEs</pkg>
   <pkg>TEQR</pkg>
   <pkg>tgp</pkg>
-  <pkg>Vdgraph</pkg>
 </packagelist>
 
 <links>
