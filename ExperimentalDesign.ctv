@@ -66,7 +66,7 @@
   Package <pkg>DoE.base</pkg> also forms the basis of a suite of related packages (cf. Groemping 2009). 
   Together with <pkg>FrF2</pkg> (cf. above) and <pkg>DoE.wrapper</pkg>, it provides the work horse 
   of the GUI package <pkg>RcmdrPlugin.DoE</pkg> (beta version; tutorial available in Groemping 2011), which integrates 
-  design of experiments functionality into the R-Commander (package <pkg>Rcmdr</pkg>, Fox 2005) 
+  design of experiments functionality into the R-Commander (package "Rcmdr", Fox 2005) 
   for the benefit of those R users who cannot or do not want to do command line programming. 
   The role of package <pkg>DoE.wrapper</pkg> in that suite is to wrap 
   functionality from other packages into the input and output structure of the package suite 
@@ -209,7 +209,7 @@
   provides toxicity equivalence range designs (Blanchard and Longmate 2010) for phase I clinical trials.</li> 
   <li>The <pkg>DoseFinding</pkg> package provides functions for the design and analysis 
   of dose-finding experiments (for example pharmaceutical Phase II clinical trials); 
-  it combines the facilities of the <pkg>MCPMod</pkg> package (maintenance discontinued; 
+  it combines the facilities of the "MCPMod" package (maintenance discontinued; 
   described in Bornkamp, Pinheiro and Bretz 2009) with a special type of optimal designs for 
   dose finding situations (MED-optimal designs, or D-optimal designs, or a mixture of both; 
   cf., Dette et al. 2008).</li> 
