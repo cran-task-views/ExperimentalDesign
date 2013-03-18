@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2012-12-28</version>
+<version>2013-03-18</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -57,6 +57,14 @@
   to create a design with certain interaction effects confounded with blocks (function
   <code>conf.design()</code>) and allows to combine existing designs in several ways
   (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation). </li>
+  <li>Package <pkg>planor</pkg> allows 
+  to generate regular fractional factorial designs with fixed and mixed levels 
+  and quite flexible randomization structures. The packages flexibility 
+  comes at the price of a certain complexity and - for larger designs - high computing time.</li>
+  <!-- <li>Package "crossdes" (!!! reenter pkg tag, if crossdes is revived) 
+  creates and analyses cross-over designs of various types (including
+  latin squares, mutually orthogonal latin squares and Youden squares) that can for example
+  be used in sensometrics. </li> -->
   <li>Package <pkg>DoE.base</pkg> provides full factorial designs with or without blocking 
   (function <code>fac.design</code>) and orthogonal arrays (function <code>oa.design</code>) 
   for main effects experiments 
@@ -120,8 +128,9 @@
   for regular fractional factorials of 2-level factors, regardless whether they have been 
   created with the package or not.<br/> 
   Fractional factorial 2-level plans can also be created by other R packages, 
-  namely <pkg>BHH2</pkg> and <pkg>qualityTools</pkg>, or with a little bit more complication 
-  by packages <pkg>conf.design</pkg> or <pkg>AlgDesign</pkg>.</li>
+  namely <pkg>BHH2</pkg> and <pkg>qualityTools</pkg> (but do not use function pbDesign from 
+  version 1.54 of that package!), or with a little bit more complication 
+  by packages <pkg>conf.design</pkg>, <pkg>planor</pkg> or <pkg>AlgDesign</pkg>.</li>
   
   <li>Package <pkg>BHH2</pkg> accompanies the 2nd edition of the book by Box, Hunter and Hunter 
   and provides various of its data sets. It can generate full and fractional factorial 
@@ -152,6 +161,8 @@
   with the possibilities of automatically choosing the cube portion of central 
   composite designs and of augmenting 
   an existing (fractional) factorial 2-level design with a star portion. </li>
+  <li>Package <pkg>Vdgraph</pkg> implements a variance dispersion graph (Vining 1993) for response 
+  surface designs created by package <pkg>rsm</pkg>. </li>
   <li>Package <pkg>qualityTools</pkg> can also create central composite designs 
   and can visualize response surfaces.</li>
   </ul>
@@ -195,6 +206,11 @@
   functionality offered by <pkg>tgp</pkg> with particle learning facilities and learning for 
   dynamic regression trees.</p>
   
+  <p>Package <pkg>BatchExperiments</pkg> is also designed for computer 
+  experiments, in this case specifically for experiments with algorithms to be run 
+  under different scenarios. The package is described in a technical report by 
+  Bischl et al. (2012).</p>
+
   <h3>Experimental designs for clinical trials</h3>
   <p>This task view only covers specific design of experiments packages; there may be some 
   grey areas. Please, also consult the <a href="ClinicalTrials.html">ClinicalTrials</a> task view. 
@@ -204,6 +220,7 @@
   e.g., a randomization tool, and it provides a few special analysis options for clinical
   trials.</li> 
   <li>Package <pkg>gsDesign</pkg> implements group sequential designs,</li> 
+  <li>Package <pkg>gsbDesign</pkg> evaluates operating characteristics for group sequential Bayesian designs,</li> 
   <li>package <pkg>asd</pkg> implements adaptive sequential designs.</li> 
   <li>Package <pkg>TEQR</pkg> 
   provides toxicity equivalence range designs (Blanchard and Longmate 2010) for phase I clinical trials.</li> 
@@ -244,6 +261,11 @@
     <li>Ball, R.D. (2005). Experimental Designs for Reliable Detection of Linkage
     Disequilibrium in Unstructured Random Population Association Studies. <i>Genetics</i>
     <b>170</b>, 859-873.</li>
+
+    <li>Bischl, B., Lang, M., Mersmann, O., Rahnenfuehrer, J. and Weihs, C. (2012). 
+    <a href="http://www1.beuth-hochschule.de/FB_II/reports/Report-2011-004.pdf">
+    Computing on high performance clusters with R: Packages BatchJobs and 
+    BatchExperiments</a>. <i>Technical Report 1/2012</i>, TU Dortmund, Germany.</li>
 
     <li>Blanchard, M.S. and Longmate, J.A. (2010). 
     Toxicity equivalence range design (TEQR): A practical Phase I design. 
@@ -380,6 +402,7 @@
   <pkg priority="core">agricolae</pkg>
   <pkg priority="core">AlgDesign</pkg>
   <pkg>asd</pkg>
+  <pkg>BatchExperiments</pkg>
   <pkg>BHH2</pkg>
   <pkg>BsMD</pkg>
   <pkg>blockTools</pkg>
@@ -390,6 +413,7 @@
   <pkg>DiceEval</pkg>
   <pkg>DiceKriging</pkg>
   <pkg>DiceView</pkg>
+  <pkg>displayHTS</pkg>
   <pkg>dynaTree</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg priority="core">DoE.wrapper</pkg>
@@ -400,6 +424,7 @@
   <pkg>GAD</pkg>
   <pkg>granova</pkg>
   <pkg>gsDesign</pkg>
+  <pkg>gsbDesign</pkg>
   <pkg>ldDesign</pkg>
   <pkg>lhs</pkg>
   <pkg>mixexp</pkg>
@@ -407,6 +432,7 @@
   <pkg>mxkssd</pkg>
   <pkg>odprism</pkg>
   <pkg>osDesign</pkg>
+  <pkg>planor</pkg>
   <pkg>plgp</pkg>
   <pkg>qualityTools</pkg>
   <pkg>qtlDesign</pkg>
@@ -416,6 +442,7 @@
   <pkg>support.CEs</pkg>
   <pkg>TEQR</pkg>
   <pkg>tgp</pkg>
+  <pkg>Vdgraph</pkg>
 </packagelist>
 
 <links>
