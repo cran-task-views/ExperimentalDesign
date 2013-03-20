@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2013-03-18</version>
+<version>2013-03-20</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -61,10 +61,9 @@
   to generate regular fractional factorial designs with fixed and mixed levels 
   and quite flexible randomization structures. The packages flexibility 
   comes at the price of a certain complexity and - for larger designs - high computing time.</li>
-  <!-- <li>Package "crossdes" (!!! reenter pkg tag, if crossdes is revived) 
-  creates and analyses cross-over designs of various types (including
+  <li>Package <pkg>crossdes</pkg> creates and analyses cross-over designs of various types (including
   latin squares, mutually orthogonal latin squares and Youden squares) that can for example
-  be used in sensometrics. </li> -->
+  be used in sensometrics. </li>
   <li>Package <pkg>DoE.base</pkg> provides full factorial designs with or without blocking 
   (function <code>fac.design</code>) and orthogonal arrays (function <code>oa.design</code>) 
   for main effects experiments 
@@ -407,6 +406,7 @@
   <pkg>BsMD</pkg>
   <pkg>blockTools</pkg>
   <pkg priority="core">conf.design</pkg>
+  <pkg>crossdes</pkg>
   <pkg>dae</pkg>
   <pkg>desirability</pkg>
   <pkg>DiceDesign</pkg>
