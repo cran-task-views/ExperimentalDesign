@@ -110,6 +110,7 @@
   
   <p>Fractional factorial 2-level designs are particularly important in industrial 
   experimentation. 
+  </p>
   <ul>
   <li>Package <pkg>FrF2</pkg> is the most comprehensive R package for 
   their creation. It generates regular Fractional Factorial 
@@ -144,11 +145,11 @@
   Lenth) for assessing which effects are active in a fractional factorial experiment
   with 2-level factors. </li>
   </ul>
-  </p>
    
   <p>
   Apart from tools for planning and analysing factorial designs, R also offers support for 
   response surface optimization for quantitative factors (cf. e.g. Myers and Montgomery 1995): 
+  </p>
   <ul>
   <li>Package <pkg>rsm</pkg> supports sequential 
   optimization with first order and second order response surface models (central composite 
@@ -165,7 +166,6 @@
   <li>Package <pkg>qualityTools</pkg> can also create central composite designs 
   and can visualize response surfaces.</li>
   </ul>
-  </p>
   
   <p>In some industries, mixtures of ingredients are important; these require special designs, 
   because the quantitative factors have a fixed total. 
@@ -213,7 +213,7 @@
   <h3>Experimental designs for clinical trials</h3>
   <p>This task view only covers specific design of experiments packages; there may be some 
   grey areas. Please, also consult the <a href="ClinicalTrials.html">ClinicalTrials</a> task view. 
-
+  </p>
   <ul>
   <li><pkg>experiment</pkg> contains tools for clinical experiments,
   e.g., a randomization tool, and it provides a few special analysis options for clinical
@@ -230,10 +230,9 @@
   dose finding situations (MED-optimal designs, or D-optimal designs, or a mixture of both; 
   cf., Dette et al. 2008).</li> 
   </ul>
-  </p>
   
   <h3>Experimental designs for special purposes</h3>
-  <p>Various further packages handle special situations in experimental design:
+  <p>Various further packages handle special situations in experimental design:</p>
   <ul>
   <li>Package <pkg>desirability</pkg> provides ways to combine several target criteria into a desirability function in order to simplify
   multi-criteria analysis; desirabilities are also offered as part of package <pkg>qualityTools</pkg>.</li> 
@@ -246,7 +245,6 @@
   <li>Package <pkg>support.CEs</pkg> provides tools for creating stated choice designs 
   for market research investigations.</li>
   </ul>
-  </p>
 
   <h3>Key references for packages in this task view</h3>
   <ul>
