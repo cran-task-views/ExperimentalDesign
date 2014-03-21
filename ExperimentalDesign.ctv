@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2013-03-20</version>
+<version>2014-03-21</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -237,7 +237,6 @@
   <li>Package <pkg>desirability</pkg> provides ways to combine several target criteria into a desirability function in order to simplify
   multi-criteria analysis; desirabilities are also offered as part of package <pkg>qualityTools</pkg>.</li> 
   <li><pkg>ldDesign</pkg> suggests appropriate designs for linkage equilibrium studies,</li>
-  <li><pkg>odprism</pkg> is an acronym for optimal design and performance of random intercept and slope models,</li>
   <li><pkg>osDesign</pkg> designs studies nested in observational studies,</li>
   <li><pkg>qtlDesign</pkg> is for quantitative trait locus designs,</li>
   <li>package <pkg>SensoMineR</pkg> contains special designs for
@@ -428,7 +427,6 @@
   <pkg>mixexp</pkg>
   <pkg>mkssd</pkg>
   <pkg>mxkssd</pkg>
-  <pkg>odprism</pkg>
   <pkg>osDesign</pkg>
   <pkg>planor</pkg>
   <pkg>plgp</pkg>
