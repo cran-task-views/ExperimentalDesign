@@ -3,7 +3,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2014-07-29</version>
+<version>2014-12-07</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -89,8 +89,6 @@
   Furthermore, the package provides features for post-processing 
   objects returned by the <code>aov()</code> function, e.g. extraction of Yates effects 
   for 2-level experiments.</li>
-  <li><pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
-  of blocks in case of too small block sizes.</li> 
 </ul>
 
   <h3>Experimental designs for agricultural and plant breeding experiments</h3>
@@ -400,7 +398,6 @@
   <pkg>BatchExperiments</pkg>
   <pkg>BHH2</pkg>
   <pkg>BsMD</pkg>
-  <pkg>blockTools</pkg>
   <pkg priority="core">conf.design</pkg>
   <pkg>crossdes</pkg>
   <pkg>dae</pkg>
