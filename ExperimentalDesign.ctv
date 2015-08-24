@@ -1,13 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CRANTaskView>
 
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2015-06-18</version>
+<version>2015-08-25</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
-  and analysis of data from experiments. Please feel free to
+  and analysis of data from experiments. With a strong increase in the number of 
+  relevant packages, packages that focus on analysis only and do not make relevant 
+  contributions for design creation are no longer added to this task view. 
+   Please feel free to
   suggest enhancements, and please send information on new packages or major 
   package updates if you think they belong here. Contact details are given on my
   <a href="http://prof.beuth-hochschule.de/groemping/DoE">Web page</a>.</p>
@@ -32,16 +36,19 @@
   concisely explained in Kuhnert and Venables (2005, p. 109 ff.); Vikneswaran (2005)
   points out specific usages for experimental design (using function <code>contrasts()</code>,
   multiple comparison functions and some convenience functions like <code>model.tables()</code>,
-  <code>replications()</code> and <code>plot.design()</code>). Lalanne (2009) 
-  provides an R companion to the well-known book by Montgomery (2005); he so far covers the first 
-  few chapters only and (understandably!) does not keep pace with the fast development 
-  of R regarding experimental design facilities. 
-  <pkg>GAD</pkg> handles 
+  <code>replications()</code> and <code>plot.design()</code>). 
+  Lawson (2014) is a good introductory textbook on experimental design in R, which 
+  gives many example applications. 
+  Lalanne (2012)   provides an R companion to the well-known book by Montgomery (2005); 
+  he so far covers approximately the first 
+  ten chapters; he does not include R's design generation facilities, but mainly 
+  discusses the analysis of existing designs. 
+  Package <pkg>GAD</pkg> handles 
   general balanced analysis of variance models with fixed and/or random effects 
   and also nested effects (the latter can only be random); they quote Underwood 1997 for this work.
   The package is quite valuable, as many 
   users have difficulties with using the R packages for handling random or mixed effects. 
-  <pkg>granova</pkg> 
+  Package <pkg>granova</pkg> 
   offers some interesting non-standard graphical representations for results of simply-structured 
   experiments (one-way and two-way layouts, paired data).</p> 
 
@@ -49,10 +56,14 @@
   <li>Package <pkg>AlgDesign</pkg> creates full
   factorial designs with or without additional quantitative variables, creates mixture
   designs (i.e., designs where the levels of factors sum to 1=100%; lattice designs are created only) and creates
-  D-, A-, or I-optimal designs exactly or approximately. <b>NOTE: Bob Wheeler, the author 
-  and maintainer of <pkg>AlgDesign</pkg>, would like to retire from this job and is looking 
-  for an "heir" whom he can entrust with continuing the package. Please contact Bob, if you 
-  are interested.</b></li> 
+  D-, A-, or I-optimal designs exactly or approximately. Package <pkg>oapackage</pkg> 
+  allows to generate (not necessarily orthogonal) 
+  optimal fractional factorial 2-level designs with the possibility to prioritize 
+  main effects higher than interactions. Package <pkg>rodd</pkg> provides T-optimal designs, 
+  also called optimal discriminating designs (Dette, Melas and Shpilev 2013,
+  Dette, Melas  and Guchenko 2014), package <pkg>LDOD</pkg> locally D-optimal designs 
+  for some nonlinear and generalized linear models, and package <pkg>PopED</pkg> optimal designs 
+  for nonlinear mixed effect models.</li> 
   <li>Package <pkg>conf.design</pkg> allows 
   to create a design with certain interaction effects confounded with blocks (function
   <code>conf.design()</code>) and allows to combine existing designs in several ways
@@ -63,15 +74,18 @@
   comes at the price of a certain complexity and - for larger designs - high computing time.</li>
   <li>Package <pkg>crossdes</pkg> creates and analyses cross-over designs of various types (including
   latin squares, mutually orthogonal latin squares and Youden squares) that can for example
-  be used in sensometrics. </li>
+  be used in sensometrics. Package <pkg>Crossover</pkg> also provides crossover designs; 
+  it offers designs from the literature and algorithmic designs, makes use of the 
+  functionality in <pkg>crossdes</pkg> and in addition provides a GUI.</li>
   <li>Package <pkg>DoE.base</pkg> provides full factorial designs with or without blocking 
   (function <code>fac.design</code>) and orthogonal arrays (function <code>oa.design</code>) 
   for main effects experiments 
   (those listed by Kuhfeld 2009 up to 144 runs, plus a few additional ones). 
-  There is also some experimental functionality 
-  for assessing the quality of orthogonal arrays.<br/>
+  There is also some functionality for assessing the quality of orthogonal arrays, 
+  related to Groemping and Xu (2014), and some analysis functionality with half-normal effects plots in 
+  quite general form (Groemping 2015).<br/>
   Package <pkg>DoE.base</pkg> also forms the basis of a suite of related packages (cf. Groemping 2009). 
-  Together with <pkg>FrF2</pkg> (cf. above) and <pkg>DoE.wrapper</pkg>, it provides the work horse 
+  Together with <pkg>FrF2</pkg> (cf. below) and <pkg>DoE.wrapper</pkg>, it provides the work horse 
   of the GUI package <pkg>RcmdrPlugin.DoE</pkg> (beta version; tutorial available in Groemping 2011), which integrates 
   design of experiments functionality into the R-Commander (package "Rcmdr", Fox 2005) 
   for the benefit of those R users who cannot or do not want to do command line programming. 
@@ -89,19 +103,27 @@
   Furthermore, the package provides features for post-processing 
   objects returned by the <code>aov()</code> function, e.g. extraction of Yates effects 
   for 2-level experiments.</li>
-  <li><pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
-  of blocks in case of too small block sizes.</li> 
+  <li>Package <pkg>daewr</pkg> accompanies the book <i>Design and Analysis of Experiments with R</i> 
+  by Lawson (2014) and does not only provide data sets from the book but also some standalone functionality 
+  that is not available elsewhere in R, e.g. definitive screening designs.</li>
+  <li>Package <pkg>OPDOE</pkg> accompanies the book <i>Optimal Experimental Design with
+   R</i> by Rasch et al. (2011). It has some interesting sample size estimation functionality, 
+   but is almost unusable without the book (the first edition of which I would not recommend buying).</li> 
+  <li>Package <pkg>blockTools</pkg> assigns units to blocks in order to end up with homogeneous sets
+  of blocks in case of too small block sizes; package <pkg>blocksdesign</pkg> permits 
+  the creation of nested block structures.</li>
 </ul>
 
   <h3>Experimental designs for agricultural and plant breeding experiments</h3>
-  <p><pkg>agricolae</pkg> offers extensive functionality on experimental design 
+  <p>Package <pkg>agricolae</pkg> offers extensive functionality on experimental design 
   especially for agricultural and plant breeding experiments, which can also be useful 
   for other purposes. It supports <i>planning</i> of lattice designs, factorial designs, 
   randomized complete block designs, completely randomized designs, 
   (Graeco-)Latin square designs, balanced incomplete block designs and alpha designs. 
   There are also various <i>analysis</i> facilities for experimental data, e.g. treatment 
   comparison procedures and several non-parametric tests, but also some quite specialized 
-  possibilities for specific types of experiments.</p>
+  possibilities for specific types of experiments. The package <pkg>agridat</pkg> 
+  offers a large repository of useful agricultural data sets.</p>
 
   <h3>Experimental designs for industrial experiments</h3>
   <p>Some further packages especially handle designs for industrial experiments
@@ -112,7 +134,7 @@
   experimentation. 
   </p>
   <ul>
-  <li>Package <pkg>FrF2</pkg> is the most comprehensive R package for 
+  <li>Package <pkg>FrF2</pkg> (Groemping 2014) is the most comprehensive R package for 
   their creation. It generates regular Fractional Factorial 
   designs for factors with 2 levels as well as Plackett-Burman type screening designs. 
   Regular fractional factorials default to maximum resolution minimum aberration designs 
@@ -130,7 +152,11 @@
   Fractional factorial 2-level plans can also be created by other R packages, 
   namely <pkg>BHH2</pkg> and <pkg>qualityTools</pkg> (but do not use function pbDesign from 
   version 1.54 of that package!), or with a little bit more complication 
-  by packages <pkg>conf.design</pkg>, <pkg>planor</pkg> or <pkg>AlgDesign</pkg>.</li>
+  by packages <pkg>conf.design</pkg>, <pkg>planor</pkg> or <pkg>AlgDesign</pkg>.
+  Package <pkg>oapackage</pkg> allows to generate (not necessarily orthogonal) 
+  optimal fractional factorial 2-level designs with the possibility to prioritize 
+  main effects higher than interactions. Package <pkg>ALTopt</pkg> provides optimal designs 
+  for accelerated life testing.</li>
   
   <li>Package <pkg>BHH2</pkg> accompanies the 2nd edition of the book by Box, Hunter and Hunter 
   and provides various of its data sets. It can generate full and fractional factorial 
@@ -162,9 +188,12 @@
   composite designs and of augmenting 
   an existing (fractional) factorial 2-level design with a star portion. </li>
   <li>Package <pkg>Vdgraph</pkg> implements a variance dispersion graph (Vining 1993) for response 
-  surface designs created by package <pkg>rsm</pkg>. </li>
+  surface designs created by package <pkg>rsm</pkg>. Package <pkg>VdgRsm</pkg> 
+  provides similar functionality with more variety.</li>
   <li>Package <pkg>qualityTools</pkg> can also create central composite designs 
   and can visualize response surfaces.</li>
+  <li>Package <pkg>EngrExpt</pkg> provides a collection of data sets from the book 
+  <i>Introductory Statistics for Engineering Experimentation</i> by Nelson, Coffin and Copeland (2003).</li>
   </ul>
   
   <p>In some industries, mixtures of ingredients are important; these require special designs, 
@@ -197,6 +226,12 @@
   and evaluates meta models (among others Kriging ones), and the package <pkg>DiceView</pkg> 
   provides facilities for viewing sections of multidimensional meta models.</p>
   
+  <p>Package <pkg>MaxPro</pkg> provides maximum projection designs as introduced by 
+  Joseph, Gul and Ba(2015). Package <pkg>simrel</pkg> allows creation of designs for 
+  computer experiments according to the Multi-level binary replacement (MBR) strategy 
+  by Martens et al. (2010).
+  </p>
+  
   <p>Package <pkg>tgp</pkg> is another package dedicated to planning and analysing 
   computer experiments. Here, emphasis is on Bayesian methods. 
   The package can for example be used with various kinds of (surrogate) models for 
@@ -215,14 +250,21 @@
   grey areas. Please, also consult the <a href="ClinicalTrials.html">ClinicalTrials</a> task view. 
   </p>
   <ul>
-  <li><pkg>experiment</pkg> contains tools for clinical experiments,
+  <li>Package <pkg>experiment</pkg> contains tools for clinical experiments,
   e.g., a randomization tool, and it provides a few special analysis options for clinical
   trials.</li> 
-  <li>Package <pkg>gsDesign</pkg> implements group sequential designs,</li> 
-  <li>Package <pkg>gsbDesign</pkg> evaluates operating characteristics for group sequential Bayesian designs,</li> 
-  <li>package <pkg>asd</pkg> implements adaptive sequential designs.</li> 
+  <li>Package <pkg>gsDesign</pkg> implements group sequential designs, 
+  package <pkg>OptGS</pkg> near-optimal balacned group sequential designs.</li> 
+  <li>Package <pkg>gsbDesign</pkg> evaluates operating characteristics for group sequential Bayesian designs.</li> 
+  <li>Package <pkg>asd</pkg> implements adaptive sequential designs.</li> 
+  <li>Package <pkg>OptInterim</pkg> is for two- and three-stage designs for longterm binary endpoints.</li> 
+  <li>Package <pkg>bcrm</pkg> offers Bayesian CRM designs.</li>
+  <li>Package <pkg>MAMS</pkg> offers designs for multi-arm multi stage studies.</li>
   <li>Package <pkg>TEQR</pkg> 
-  provides toxicity equivalence range designs (Blanchard and Longmate 2010) for phase I clinical trials.</li> 
+  provides toxicity equivalence range designs (Blanchard and Longmate 2010) for phase I clinical trials, 
+  package <pkg>pipe.design</pkg> so-called <i>product of independent beta probabilities dose escalation</i> (PIPE) 
+  designs for phase I. </li> 
+  <li>Package <pkg>sp23design</pkg>	claims to offer seamless integration of phase II to III.</li>
   <li>The <pkg>DoseFinding</pkg> package provides functions for the design and analysis 
   of dose-finding experiments (for example pharmaceutical Phase II clinical trials); 
   it combines the facilities of the "MCPMod" package (maintenance discontinued; 
@@ -238,24 +280,27 @@
   multi-criteria analysis; desirabilities are also offered as part of package <pkg>qualityTools</pkg>.</li> 
   <li><pkg>osDesign</pkg> designs studies nested in observational studies,</li>
   <li><pkg>qtlDesign</pkg> is for quantitative trait locus designs,</li>
-  <li>package <pkg>SensoMineR</pkg> contains special designs for
+  <li><pkg>toxtestD</pkg> creates optimal designs for binary toxicity tests,</li>
+  <li><pkg>designGG</pkg> creates optimal designs for genetical genomics experiments (see Li et al. 2009),</li>
+  <li><pkg>geospt</pkg> allows to optimize spatial networks of sampling points (see e.g. Santacruz, Rubiano and Melo 2014).</li>
+  <li>Package <pkg>SensoMineR</pkg> contains special designs for
   sensometric studies, e.g., for the triangle test.</li>
   <li>Package <pkg>support.CEs</pkg> provides tools for creating stated choice designs 
   for market research investigations.</li>
   </ul>
-
-  <h3>Key references for packages in this task view</h3>
+  
+<h3>Key references for packages in this task view</h3>
   <ul>
-    <li>Atkinson, A.C. and Donev, A.N. (1992). <i>Optimum Experimental Designs</i>.
+    <li>Atkinson, A.C. and Donev, A.N. (1992). <i>Optimum Experimental Designs.</i>
     Oxford: Clarendon Press.</li>
 
     <li>Bailey, R.A. (1981). A unified approach to design of experiments. 
     <i>Journal of the Royal Statistical Society, Series A</i>
-    <b>144</b>, 214-223.</li>
+    <b>144</b> 214-223.</li>
 
     <li>Ball, R.D. (2005). Experimental Designs for Reliable Detection of Linkage
     Disequilibrium in Unstructured Random Population Association Studies. <i>Genetics</i>
-    <b>170</b>, 859-873.</li>
+    <b>170</b> 859-873.</li>
 
     <li>Bischl, B., Lang, M., Mersmann, O., Rahnenfuehrer, J. and Weihs, C. (2012). 
     <a href="http://www1.beuth-hochschule.de/FB_II/reports/Report-2011-004.pdf">
@@ -264,52 +309,59 @@
 
     <li>Blanchard, M.S. and Longmate, J.A. (2010). 
     Toxicity equivalence range design (TEQR): A practical Phase I design. 
-    <i>Contemporary Clinical Trials</i>, doi:10.1016/j.cct.2010.09.011.</li>
+    <i>Contemporary Clinical Trials</i> doi:10.1016/j.cct.2010.09.011.</li>
 
     <li>Block, R. and Mee, R. (2005). Resolution IV Designs with 128 Runs. 
-    <i>Journal of Quality Technology</i> <b>37</b>, 282-293. </li>
+    <i>Journal of Quality Technology</i> <b>37</b> 282-293. </li>
     
     <li>Bornkamp B., Pinheiro J. C., and Bretz, F. (2009). 
     <a href="http://www.jstatsoft.org/v29/i07/paper">MCPMod: An R Package for the Design and Analysis of Dose-Finding Studies</a>. 
-    <i>Journal of Statistical Software</i> <b>29</b>(7), 1-23.</li>
+    <i>Journal of Statistical Software</i> <b>29</b>(7) 1-23.</li>
     
     <li>Box G. E. P, Hunter, W. C. and Hunter, J. S. (2005). <i>Statistics for Experimenters</i>
     (2nd edition). New York: Wiley.</li>
     
     <li>Box, G. E. P and R. D. Meyer (1986). An Analysis for Unreplicated Fractional
-    Factorials. <i>Technometrics</i> <b>28</b>, 11-18.</li>
+    Factorials. <i>Technometrics</i> <b>28</b> 11-18.</li>
 
     <li>Box, G. E. P and R. D. Meyer (1993). Finding the Active Factors in Fractionated Screening
-    Experiments. <i>Journal of Quality Technology</i> <b>25</b>, 94-105.</li>
+    Experiments. <i>Journal of Quality Technology</i> <b>25</b> 94-105.</li>
 
     <li>Chasalow, S., Brand, R. (1995). Generation of Simplex Lattice Points. 
-    <i>Journal of the Royal Statistical Society, Series C </i> <b>44</b>, 534-545.</li> 
+    <i>Journal of the Royal Statistical Society, Series C </i> <b>44</b> 534-545.</li> 
 
     <li>Chen, J., Sun, D.X. and Wu, C.F.J. (1993). A catalogue of 2-level and 3-level orthogonal arrays. 
-    <i>International Statistical Review</i> <b>61</b>, 131-145.</li>
+    <i>International Statistical Review</i> <b>61</b> 131-145.</li>
 
-    <li>Collings, B. J. (1989). Quick Confounding. <i>Technometrics</i> <b>31</b>, 107-110.</li>
+    <li>Collings, B. J. (1989). Quick Confounding. <i>Technometrics</i> <b>31</b> 107-110.</li>
 
     <li>Cornell, J. (2002). <i>Experiments with Mixtures</i>. Third Edition. Wiley.</li> 
     
     <li>Daniel, C. (1959). Use of Half Normal Plots in Interpreting Two Level Experiments.
-    <i>Technometrics</i> <b>1</b>, 311-340.</li>
+    <i>Technometrics</i> <b>1</b> 311-340.</li>
     
     <li>Derringer, G. and Suich, R. (1980). Simultaneous Optimization of Several Response Variables.
-    <i>Journal of Quality Technology</i> <b>12</b>, 214-219.</li>
+    <i>Journal of Quality Technology</i> <b>12</b> 214-219.</li>
 
     <li>Dette, H., Bretz, F., Pepelyshev, A. and Pinheiro, J. C. (2008). 
-    Optimal Designs for Dose Finding Studies. <i>Journal of the American Statisical Association</i> <b>103</b>, 
+    Optimal Designs for Dose Finding Studies. <i>Journal of the American Statisical Association</i> <b>103</b> 
     1225-1237.</li>
 
-    <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments</i>. Academic Press, New York.</li>
+    <li>Dette, H., Melas, V.B. and Shpilev, P. (2013). Robust T-optimal discriminating designs.  
+    <i>The Annals of Statistics</i> <b>41</b> 1693-1715.</li>
+    
+    <li>Dette H., Melas V.B. and Guchenko R. (2014). Bayesian T-optimal discriminating designs. 
+    <a href="http://arxiv.org/abs/1412.2548">ArXiv link</a>. </li>
+    
+    <li>Federov, V.V. (1972). <i>Theory of Optimal Experiments.</i> Academic Press, New York.</li>
     
     <li>Fox, J. (2005). <a href="http://www.jstatsoft.org/v14/i09/paper">The R Commander: 
     A Basic-Statistics Graphical User Interface to R</a>. 
-    <i>Journal of Statistical Software</i> <b>14</b>(9), 1-42.</li>
+    <i>Journal of Statistical Software</i> <b>14</b>(9) 1-42.</li>
     
-    <li>Gramacy, R.B. (2007). <a href="http://www.jstatsoft.org/v19/i09/paper">tgp: An R Package for Bayesian Nonstationary, Semiparametric Nonlinear Regression and Design by Treed Gaussian Process Models</a>.
-    <i>Journal of Statistical Software</i> <b>19</b>(9), 1-46.</li>
+    <li>Gramacy, R.B. (2007). <a href="http://www.jstatsoft.org/v19/i09/paper">tgp: An R Package 
+    for Bayesian Nonstationary, Semiparametric Nonlinear Regression and Design by Treed Gaussian Process Models</a>.
+    <i>Journal of Statistical Software</i> <b>19</b>(9) 1-46.</li>
 
     <li>Groemping, U. (2009). <a href="http://www.R-project.org/conferences/useR-2009/slides/Gromping.pdf">
     Design of Experiments in R</a>. Presentation at UseR! 2009 in Rennes, France.</li>
@@ -319,6 +371,16 @@
     <a href="http://www1.beuth-hochschule.de/FB_II/reports/welcome.htm">Reports in Mathematics, Physics and Chemistry</a>, 
     Department II, Beuth University of Applied Sciences Berlin.</li>
 
+    <li>Groemping, U. (2014). R Package FrF2 for Creating and Analysing Fractional Factorial 2-Level Designs. 
+    <i>Journal of Statistical Software</i> <b>56</b>(1) 1-56.</li> 
+    
+    <li>Groemping, U. and Xu, H. (2014). Generalized resolution for orthogonal arrays. 
+    <i>The Annals of Statistics</i> <b>42</b> 918-939.</li>
+
+    <li>Groemping, U. (2015). Augmented Half Normal Effects Plots in the Presence 
+    of a Few Error Degrees of Freedom. <i>Quality and Reliability Engineering International</i> 
+    <b>online early</b> DOI: 10.1002/qre.1842.</li> 
+
     <li>Hoaglin D., Mosteller F. and Tukey J. (eds., 1991). <i>Fundamentals of Exploratory Analysis of Variance</i>. 
     Wiley, New York.</li>      
 
@@ -326,8 +388,11 @@
     Hall, London.</li>
 
     <li>Johnson, M.E., Moore L.M. and Ylvisaker D. (1990). Minimax and maximin distance designs. 
-    <i>Journal of Statistical Planning and Inference</i>, <b>26</b>, 131-148.</li>
+    <i>Journal of Statistical Planning and Inference</i> <b>26</b> 131-148.</li>
 
+    <li>Joseph, V. R., Gul, E., and Ba, S. (2015). Maximum Projection Designs for 
+    Computer Experiments. <i>Biometrika</i> <b>102</b> 371-380.</li>
+    
     <li>Kuhfeld, W. (2009). Orthogonal arrays. Website courtesy of SAS Institute Inc., accessed August 4th 2010. 
     URL <a href="http://support.sas.com/techsup/technote/ts723.html">http://support.sas.com/techsup/technote/ts723.html</a>.</li>
 
@@ -336,45 +401,65 @@
     (PDF document (about 360 pages) of lecture notes in combination with the data sets and R scripts)</li>
     
     <li>Kunert, J. (1998). Sensory Experiments as Crossover Studies. <i>Food Quality and Preference</i>
-    <b>9</b>, 243-253.</li>
+    <b>9</b> 243-253.</li>
 
-    <li>Lalanne, C. (2009). R Companion to Montgomerys Design and Analysis of Experiments.
+    <li>Lalanne, C. (2012). R Companion to Montgomerys Design and Analysis of Experiments.
     Manuscript, downloadable at URL 
     <a href="http://www.aliquote.org/articles/tech/dae/dae.pdf">http://www.aliquote.org/articles/tech/dae/dae.pdf</a>.
     (The file accompanies the book by Montgomery 2005 (cf. below).)</li>
     
+    <li>Lawson, J. (2014). <i>Design and Analysis of Experiments with R.</i> Chapman and Hall/CRC, Boca Raton.</li>
+    
     <li>Lenth, R.V. (1989). Quick and Easy Analysis of Unreplicated Factorials.
-    <i>Technometrics</i> <b>31</b>, 469-473.</li>
+    <i>Technometrics</i> <b>31</b> 469-473.</li>
 
     <li>Lenth, R.V. (2009). <a href="http://www.jstatsoft.org/v32/i07/paper">Response-Surface Methods in R, Using rsm</a>.
-    <i>Journal of Statistical Software</i> <b>32</b>(7), 1-17.</li>
+    <i>Journal of Statistical Software</i> <b>32</b>(7) 1-17.</li>
+    
+    <li>Y. Li, M. Swertz, G. Vera, J. Fu, R. Breitling, and R.C. Jansen. <pkg>designGG</pkg>: 
+    An R-package and Web tool for the optimal design of genetical genomics experiments. 
+    <i>BMC Bioinformatics</i> <b>10</b>:188</li>
 
-    <li>Mee, R. (2009). <i>A Comprehensive Guide to Factorial Two-Level Experimentation</i>. 
-    New York: Springer.</li>
+    <li>Martens, H., Mage, I., Tondel, K., Isaeva, J., Hoy, M. and Saebo, S. (2010). 
+    Multi-level binary replacement (MBR) design for computer experiments in high-dimensional 
+    nonlinear systems, <i>J. Chemom.</i> <b>24</b> 748-756.</li>
 
-    <li>Montgomery, D. C. (2005, 6th ed.). <i>Design and Analysis of Experiments</i>. New York: Wiley.</li>
+    <li>Mee, R. (2009). <i>A Comprehensive Guide to Factorial Two-Level Experimentation.</i> 
+    Springer, New York.</li>
+
+    <li>Montgomery, D. C. (2005, 6th ed.). <i>Design and Analysis of Experiments.</i> Wiley, New York.</li>
     
     <li>Myers, R. H. and Montgomery, D. C. (1995). <i>Response Surface Methodology: Process and Product
-    Optimization Using Designed Experiments</i>. New York: Wiley.</li>
+    Optimization Using Designed Experiments.</i> Wiley, New York.</li>
     
-    <li>Plackett, R.L. and Burman, J.P. (1946). The design of optimum multifactorial experiments. <i>Biometrika</i> <b>33</b>, 305-325.</li>
+    <li>Nelson, P.R., Coffin, M. and Copeland, K.A.F. (2003). <i>Introductory Statistics for Engineering 
+    Experimentation.</i>Academic Press, San Diego.</li>
 
-    <li>Rosenbaum, P. (1989). Exploratory Plots for Paired Data. <i>The American Statistician</i> <b>43</b>, 108-109.</li> 
+    <li>Plackett, R.L. and Burman, J.P. (1946). The design of optimum multifactorial experiments. <i>Biometrika</i> <b>33</b> 305-325.</li>
+
+    <li>Rasch, D., Pilz, J., Verdooren, L.R. and Gebhardt, A. (2011). <i>Optimal Experimental 
+    Design with R.</i> Chapman and Hall/CRC. (caution, does not live up to its title!)</li>
+
+    <li>Rosenbaum, P. (1989). Exploratory Plots for Paired Data. <i>The American Statistician</i> <b>43</b> 108-109.</li> 
 
     <li>Sacks, J., Welch, W.J., Mitchell, T.J. and Wynn, H.P. (1989). Design and analysis of computer experiments.
-    <i>Statistical Science</i> <b>4</b>, 409-435.</li>
+    <i>Statistical Science</i> <b>4</b> 409-435.</li>
 
-    <li>Santner T.J., Williams B.J. and Notz W.I. (2003). <i>The Design and Analysis of Computer Experiments</i>.
+    <li>Santacruz, A., Rubiano, Y., Melo, C., 2014. Evolutionary optimization of spatial sampling networks 
+    designed for the monitoring of soil carbon. In: Hartemink, A., McSweeney, K. (Eds.). <i>Soil Carbon.</i> 
+    Series: Progress in Soil Science. (pp. 77-84). Springer, New York. </li>
+
+    <li>Santner T.J., Williams B.J. and Notz W.I. (2003). <i>The Design and Analysis of Computer Experiments.</i>
     Springer, New York.</li>
 
     <li>Sen S, Satagopan JM and Churchill GA (2005). Quantitative Trait Locus Study Design from an Information
-    Perspective. <i>Genetics</i> <b>170</b>, 447-464.</li>
+    Perspective. <i>Genetics</i> <b>170</b> 447-464.</li>
     
     <li>Stein, M. (1987). Large Sample Properties of Simulations Using Latin Hypercube Sampling.
-    <i>Technometrics</i> <b>29</b>, 143-151.</li>
+    <i>Technometrics</i> <b>29</b> 143-151.</li>
     
     <li>Stocki, R. (2005). A Method to Improve Design Reliability Using Optimal Latin Hypercube Sampling.
-    <i>Computer Assisted Mechanics and Engineering Sciences</i> <b>12</b>, 87-105.</li>
+    <i>Computer Assisted Mechanics and Engineering Sciences</i> <b>12</b> 87-105.</li>
 
     <li>Underwood, A.J. (1997). <i>Experiments in Ecology: Their Logical Design and Interpretation Using Analysis of Variance.</i>
     Cambridge University Press, Cambridge.</li>
@@ -385,25 +470,33 @@
     and the Sciences" by Berger and Maurer, 2002.)</li>
 
     <li>Vining, G. (1993). A Computer Program for Generating Variance Dispersion Graphs. 
-    <i>Journal of Quality Technology</i> <b>25</b>, 45-58. Corrigendum in the same volume, pp. 333-335.</li>
+    <i>Journal of Quality Technology</i> <b>25</b> 45-58. Corrigendum in the same volume, pp. 333-335.</li>
 
     <li>Xu, H. (2009). Algorithmic Construction of Efficient Fractional Factorial Designs With Large Run Sizes. 
-    <i>Technometrics</i> <b>51</b>, 262-277. </li>
+    <i>Technometrics</i> <b>51</b> 262-277. </li>    
 
   </ul>
+  
 </info>
 
 <packagelist>
   <pkg priority="core">agricolae</pkg>
+  <pkg>agridat</pkg>
   <pkg priority="core">AlgDesign</pkg>
+  <pkg>ALTopt</pkg>
   <pkg>asd</pkg>
   <pkg>BatchExperiments</pkg>
   <pkg>BHH2</pkg>
+  <pkg>bcrm</pkg>
   <pkg>blockTools</pkg>
+  <pkg>blocksdesign</pkg>
   <pkg>BsMD</pkg>
   <pkg priority="core">conf.design</pkg>
-  <pkg>crossdes</pkg>
+  <pkg priority="core">crossdes</pkg>
+  <pkg>Crossover</pkg>
   <pkg>dae</pkg>
+  <pkg>daewr</pkg>
+  <pkg>designGG</pkg>
   <pkg>desirability</pkg>
   <pkg>DiceDesign</pkg>
   <pkg>DiceEval</pkg>
@@ -413,29 +506,45 @@
   <pkg priority="core">DoE.base</pkg>
   <pkg priority="core">DoE.wrapper</pkg>
   <pkg>DoseFinding</pkg>
+  <pkg>EngrExpt</pkg>
   <pkg>experiment</pkg>
   <pkg priority="core">FrF2</pkg>
   <pkg>FrF2.catlg128</pkg>
   <pkg>GAD</pkg>
+  <pkg>geospt</pkg>
   <pkg>granova</pkg>
   <pkg>gsDesign</pkg>
   <pkg>gsbDesign</pkg>
   <pkg>lhs</pkg>
+  <pkg>LDOD</pkg>
+  <pkg>MAMS</pkg>
+  <pkg>MaxPro</pkg>
   <pkg>mixexp</pkg>
   <pkg>mkssd</pkg>
   <pkg>mxkssd</pkg>
+  <pkg>oapackage</pkg>
+  <pkg>OPDOE</pkg>
+  <pkg>OptGS</pkg>
+  <pkg>OptInterim</pkg>
   <pkg>osDesign</pkg>
-  <pkg>planor</pkg>
+  <pkg>pipe.design</pkg>
+  <pkg priority="core">planor</pkg>
   <pkg>plgp</pkg>
+  <pkg>PopED</pkg>
   <pkg>qualityTools</pkg>
   <pkg>qtlDesign</pkg>
   <pkg>RcmdrPlugin.DoE</pkg>
+  <pkg>rodd</pkg>
   <pkg priority="core">rsm</pkg>
   <pkg>SensoMineR</pkg>
+  <pkg>simrel</pkg>
+  <pkg>sp23design</pkg>
   <pkg>support.CEs</pkg>
   <pkg>TEQR</pkg>
   <pkg>tgp</pkg>
+  <pkg>toxtestD</pkg>
   <pkg>Vdgraph</pkg>
+  <pkg>VdgRsm</pkg>
 </packagelist>
 
 <links>
