@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2015-08-25</version>
+<version>2015-10-13</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -150,8 +150,7 @@
   for regular fractional factorials of 2-level factors, regardless whether they have been 
   created with the package or not.<br/> 
   Fractional factorial 2-level plans can also be created by other R packages, 
-  namely <pkg>BHH2</pkg> and <pkg>qualityTools</pkg> (but do not use function pbDesign from 
-  version 1.54 of that package!), or with a little bit more complication 
+  namely <pkg>BHH2</pkg>, or with a little bit more complication 
   by packages <pkg>conf.design</pkg>, <pkg>planor</pkg> or <pkg>AlgDesign</pkg>.
   Package <pkg>oapackage</pkg> allows to generate (not necessarily orthogonal) 
   optimal fractional factorial 2-level designs with the possibility to prioritize 
@@ -190,8 +189,6 @@
   <li>Package <pkg>Vdgraph</pkg> implements a variance dispersion graph (Vining 1993) for response 
   surface designs created by package <pkg>rsm</pkg>. Package <pkg>VdgRsm</pkg> 
   provides similar functionality with more variety.</li>
-  <li>Package <pkg>qualityTools</pkg> can also create central composite designs 
-  and can visualize response surfaces.</li>
   <li>Package <pkg>EngrExpt</pkg> provides a collection of data sets from the book 
   <i>Introductory Statistics for Engineering Experimentation</i> by Nelson, Coffin and Copeland (2003).</li>
   </ul>
@@ -199,7 +196,7 @@
   <p>In some industries, mixtures of ingredients are important; these require special designs, 
   because the quantitative factors have a fixed total. 
   Mixture designs are handled by packages <pkg>AlgDesign</pkg> (function <code>gen.mixture</code>, 
-  lattice designs), <pkg>qualityTools</pkg> (function <code>mixDesign</code>, 
+  lattice designs),
   lattice designs and simplex centroid designs), and <pkg>mixexp</pkg> (several small functions for simplex centroid, 
   simplex lattice and extreme vertices designs as well as for plotting). </p>
 
@@ -277,7 +274,7 @@
   <p>Various further packages handle special situations in experimental design:</p>
   <ul>
   <li>Package <pkg>desirability</pkg> provides ways to combine several target criteria into a desirability function in order to simplify
-  multi-criteria analysis; desirabilities are also offered as part of package <pkg>qualityTools</pkg>.</li> 
+  multi-criteria analysis.</li> 
   <li><pkg>osDesign</pkg> designs studies nested in observational studies,</li>
   <li><pkg>qtlDesign</pkg> is for quantitative trait locus designs,</li>
   <li><pkg>toxtestD</pkg> creates optimal designs for binary toxicity tests,</li>
@@ -531,7 +528,6 @@
   <pkg priority="core">planor</pkg>
   <pkg>plgp</pkg>
   <pkg>PopED</pkg>
-  <pkg>qualityTools</pkg>
   <pkg>qtlDesign</pkg>
   <pkg>RcmdrPlugin.DoE</pkg>
   <pkg>rodd</pkg>
