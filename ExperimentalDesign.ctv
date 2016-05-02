@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2015-10-13</version>
+<version>2016-05-02</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -233,7 +233,7 @@
   computer experiments. Here, emphasis is on Bayesian methods. 
   The package can for example be used with various kinds of (surrogate) models for 
   sequential optimization, e.g. with an expected improvement criterion for optimizing a noisy 
-  blackbox target function. Packages <pkg>plgp</pkg> and <pkg>dynaTree</pkg> enhance the 
+  blackbox target function. Package <pkg>plgp</pkg> enhances the 
   functionality offered by <pkg>tgp</pkg> with particle learning facilities and learning for 
   dynamic regression trees.</p>
   
@@ -499,7 +499,6 @@
   <pkg>DiceEval</pkg>
   <pkg>DiceKriging</pkg>
   <pkg>DiceView</pkg>
-  <pkg>dynaTree</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg priority="core">DoE.wrapper</pkg>
   <pkg>DoseFinding</pkg>
