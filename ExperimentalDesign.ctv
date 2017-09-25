@@ -93,7 +93,7 @@
   main effects higher than interactions. Package <pkg>rodd</pkg> provides T-optimal designs, 
   also called optimal discriminating designs (Dette, Melas and Shpilev 2013,
   Dette, Melas  and Guchenko 2014), Package <pkg>acebayes</pkg>
-  calculates optimal Bayesian designs using an approcimate coordinate exchange algorithm, 
+  calculates optimal Bayesian designs using an approximate coordinate exchange algorithm, 
   package <pkg>OBsMD</pkg> provides "Objective Bayesian Model Discrimination in Follow-Up Designs" 
   according to Consonni and Deldossi (2015). Further optimal design packages for 
   very specific purposes are listed at the end of this view.
