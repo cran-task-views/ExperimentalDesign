@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2017-10-12</version>
+<version>2017-11-29</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -95,10 +95,7 @@
   optimal designs for completely randomized or blocked Poisson models and 
   package <pkg>PopED</pkg> provides optimal designs for nonlinear mixed effect models.</li> 
   <li>There are various further packages that deal with optimal designs of different types: 
-  package <pkg>oapackage</pkg> 
-  allows to generate (not necessarily orthogonal) 
-  optimal fractional factorial 2-level designs with the possibility to prioritize 
-  main effects higher than interactions. Package <pkg>rodd</pkg> provides T-optimal designs, 
+  Package <pkg>rodd</pkg> provides T-optimal designs, 
   also called optimal discriminating designs (Dette, Melas and Shpilev 2013,
   Dette, Melas  and Guchenko 2014), Package <pkg>acebayes</pkg>
   calculates optimal Bayesian designs using an approximate coordinate exchange algorithm, 
@@ -206,9 +203,7 @@
   namely <pkg>BHH2</pkg> and <pkg>qualityTools</pkg> (but do not use function pbDesign from
   version 1.54 of that package!), or with a little bit more complication
 	by packages <pkg>conf.design</pkg>, <pkg>planor</pkg> or <pkg>AlgDesign</pkg>.
-  Package <pkg>oapackage</pkg> allows to generate (not necessarily orthogonal) 
-  optimal fractional factorial 2-level designs with the possibility to prioritize 
-  main effects higher than interactions. Package <pkg>ALTopt</pkg> provides optimal designs 
+  Package <pkg>ALTopt</pkg> provides optimal designs 
   for accelerated life testing.</li>
   
   <li>Package <pkg>BHH2</pkg> accompanies the 2nd edition of the book by Box, Hunter and Hunter 
@@ -725,7 +720,6 @@
   <pkg>mixexp</pkg>
   <pkg>mkssd</pkg>
   <pkg>mxkssd</pkg>
-  <pkg>oapackage</pkg>
   <pkg>OBsMD</pkg>
   <pkg>odr</pkg>
   <pkg>OPDOE</pkg>
