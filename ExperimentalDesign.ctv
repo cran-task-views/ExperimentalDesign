@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2017-11-29</version>
+<version>2017-12-21</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -302,8 +302,7 @@
   designs and some measures to assess the quality of designs for computer experiments. The 
   package <pkg>DiceKriging</pkg> provides the kriging methodology which is often used for 
   creating meta models from computer experiments, the package <pkg>DiceEval</pkg> creates 
-  and evaluates meta models (among others Kriging ones), and the package <pkg>DiceView</pkg> 
-  provides facilities for viewing sections of multidimensional meta models.</p>
+  and evaluates meta models (among others Kriging ones).</p>
   
   <p>Package <pkg>MaxPro</pkg> provides maximum projection designs as introduced by 
   Joseph, Gul and Ba(2015). Package <pkg>SLHD</pkg> provides optimal sliced latin 
@@ -683,7 +682,6 @@
   <pkg>DiceDesign</pkg>
   <pkg>DiceEval</pkg>
   <pkg>DiceKriging</pkg>
-  <pkg>DiceView</pkg>
   <pkg>docopulae</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg>DoE.MIParray</pkg>
