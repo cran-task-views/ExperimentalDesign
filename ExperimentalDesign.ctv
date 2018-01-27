@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2017-12-21</version>
+<version>2018-01-28</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -349,7 +349,7 @@
   <li>Package <pkg>binseqtest</pkg> handles sequential single arm binary response trials.</li>
   <li>Package <pkg>asd</pkg> implements adaptive seamless designs (see e.g. Parsons et al. 2012).</li> 
   <li>Package <pkg>OptInterim</pkg> is for two- and three-stage designs for longterm binary endpoints.</li> 
-  <li>Packages <pkg>bcrm</pkg> and <pkg>crmPack</pkg> offer Bayesian CRM designs.</li>
+  <li>Packages <pkg>bcrm</pkg> offers Bayesian CRM designs.</li>
   <li>Package <pkg>MAMS</pkg> offers designs for multi-arm multi stage studies, <pkg>BayesMAMS</pkg> provides a 
   Bayesian sample size calculations for these.</li>
   <li>Package <pkg>BOIN</pkg> provides Bayesian optimal interval designs, which are used in phase I clinical 
@@ -665,7 +665,6 @@
   <pkg>choiceDes</pkg>
   <pkg>CombinS</pkg>
   <pkg priority="core">conf.design</pkg>
-  <pkg>crmPack</pkg>
   <pkg priority="core">crossdes</pkg>
   <pkg>Crossover</pkg>
   <pkg>dae</pkg>
