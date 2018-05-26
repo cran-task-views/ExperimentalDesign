@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2018-02-17</version>
+<version>2018-05-26</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -107,6 +107,10 @@
   to create a design with certain interaction effects confounded with blocks (function
   <code>conf.design()</code>) and allows to combine existing designs in several ways
   (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation). </li>
+  <li>Package <pkg>planor</pkg> allows 
+  to generate regular fractional factorial designs with fixed and mixed levels 
+  and quite flexible randomization structures. The packages flexibility 
+  comes at the price of a certain complexity and - for larger designs - high computing time.</li>
   <li>Package <pkg>ibd</pkg> creates and analyses incomplete block designs. Packages 
   <pkg>PGM2</pkg>, <pkg>RPPairwiseDesign</pkg> and <pkg>CombinS</pkg> all produce designs 
   related to (resolvable) (partially) balanced incomplete block designs. Package <pkg>PBIBD</pkg> 
@@ -198,7 +202,7 @@
   Fractional factorial 2-level plans can also be created by other R packages, 
   namely <pkg>BHH2</pkg> and <pkg>qualityTools</pkg> (but do not use function pbDesign from
   version 1.54 of that package!), or with a little bit more complication
-	by packages <pkg>conf.design</pkg> or <pkg>AlgDesign</pkg>.
+	by packages <pkg>conf.design</pkg>, <pkg>planor</pkg> or <pkg>AlgDesign</pkg>.
   Package <pkg>ALTopt</pkg> provides optimal designs 
   for accelerated life testing.</li>
   
@@ -298,7 +302,8 @@
   designs and some measures to assess the quality of designs for computer experiments. The 
   package <pkg>DiceKriging</pkg> provides the kriging methodology which is often used for 
   creating meta models from computer experiments, the package <pkg>DiceEval</pkg> creates 
-  and evaluates meta models (among others Kriging ones).</p>
+  and evaluates meta models (among others Kriging ones), and the package <pkg>DiceView</pkg> 
+  provides facilities for viewing sections of multidimensional meta models.</p>
   
   <p>Package <pkg>MaxPro</pkg> provides maximum projection designs as introduced by 
   Joseph, Gul and Ba(2015). Package <pkg>SLHD</pkg> provides optimal sliced latin 
@@ -345,7 +350,7 @@
   <li>Package <pkg>binseqtest</pkg> handles sequential single arm binary response trials.</li>
   <li>Package <pkg>asd</pkg> implements adaptive seamless designs (see e.g. Parsons et al. 2012).</li> 
   <li>Package <pkg>OptInterim</pkg> is for two- and three-stage designs for longterm binary endpoints.</li> 
-  <li>Packages <pkg>bcrm</pkg> offers Bayesian CRM designs.</li>
+  <li>Packages <pkg>bcrm</pkg> and <pkg>crmPack</pkg> offer Bayesian CRM designs.</li>
   <li>Package <pkg>MAMS</pkg> offers designs for multi-arm multi stage studies, <pkg>BayesMAMS</pkg> provides a 
   Bayesian sample size calculations for these.</li>
   <li>Package <pkg>BOIN</pkg> provides Bayesian optimal interval designs, which are used in phase I clinical 
@@ -661,6 +666,7 @@
   <pkg>choiceDes</pkg>
   <pkg>CombinS</pkg>
   <pkg priority="core">conf.design</pkg>
+  <pkg>crmPack</pkg>
   <pkg priority="core">crossdes</pkg>
   <pkg>Crossover</pkg>
   <pkg>dae</pkg>
@@ -677,6 +683,7 @@
   <pkg>DiceDesign</pkg>
   <pkg>DiceEval</pkg>
   <pkg>DiceKriging</pkg>
+  <pkg>DiceView</pkg>
   <pkg>docopulae</pkg>
   <pkg priority="core">DoE.base</pkg>
   <pkg>DoE.MIParray</pkg>
@@ -730,6 +737,7 @@
   <pkg>ph2bye</pkg>
   <pkg>pid</pkg>
   <pkg>pipe.design</pkg>
+  <pkg priority="core">planor</pkg>
   <pkg>plgp</pkg>
   <pkg>PopED</pkg>
   <pkg>powerAnalysis</pkg>
