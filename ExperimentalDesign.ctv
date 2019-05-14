@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2018-05-26</version>
+<version>2019-05-14</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -107,10 +107,6 @@
   to create a design with certain interaction effects confounded with blocks (function
   <code>conf.design()</code>) and allows to combine existing designs in several ways
   (e.g., useful for Taguchi's inner and outer array designs in industrial experimentation). </li>
-  <li>Package <pkg>planor</pkg> allows 
-  to generate regular fractional factorial designs with fixed and mixed levels 
-  and quite flexible randomization structures. The packages flexibility 
-  comes at the price of a certain complexity and - for larger designs - high computing time.</li>
   <li>Package <pkg>ibd</pkg> creates and analyses incomplete block designs. Packages 
   <pkg>PGM2</pkg>, <pkg>RPPairwiseDesign</pkg> and <pkg>CombinS</pkg> all produce designs 
   related to (resolvable) (partially) balanced incomplete block designs. Package <pkg>PBIBD</pkg> 
@@ -202,7 +198,7 @@
   Fractional factorial 2-level plans can also be created by other R packages, 
   namely <pkg>BHH2</pkg> and <pkg>qualityTools</pkg> (but do not use function pbDesign from
   version 1.54 of that package!), or with a little bit more complication
-	by packages <pkg>conf.design</pkg>, <pkg>planor</pkg> or <pkg>AlgDesign</pkg>.
+	by packages <pkg>conf.design</pkg> or <pkg>AlgDesign</pkg>.
   Package <pkg>ALTopt</pkg> provides optimal designs 
   for accelerated life testing.</li>
   
@@ -737,7 +733,6 @@
   <pkg>ph2bye</pkg>
   <pkg>pid</pkg>
   <pkg>pipe.design</pkg>
-  <pkg priority="core">planor</pkg>
   <pkg>plgp</pkg>
   <pkg>PopED</pkg>
   <pkg>powerAnalysis</pkg>
