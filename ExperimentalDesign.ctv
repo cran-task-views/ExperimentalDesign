@@ -387,7 +387,7 @@
   <li>Package <pkg>docopulae</pkg> implements optimal designs for copula models according to 
   Perrone and Mueller (2016),</li> 
   <li><pkg>optDesignSlopeInt</pkg> provides an optimal design for the estimation of the ratio of slope to intercept, and</li>
-  <li>Packages <pkg>edesign</pkg> and <pkg>MBHdesign</pkg> provide spatially balanced designs, 
+  <li>Package <pkg>MBHdesign</pkg> provides spatially balanced designs, 
   allowing the inclusion of prespecified (legacy) sites. The more elaborate package <pkg>geospt</pkg> 
   allows to optimize spatial networks of sampling points (see e.g. Santacruz, Rubiano and Melo 2014).</li>
   <li>Package <pkg>SensoMineR</pkg> contains special designs for
@@ -684,7 +684,6 @@
   <pkg>DoseFinding</pkg>
   <pkg>dynaTree</pkg>
   <pkg>easypower</pkg>
-  <pkg>edesign</pkg>
   <pkg>EngrExpt</pkg>
   <pkg>experiment</pkg>
   <pkg>ez</pkg>
