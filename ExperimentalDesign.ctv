@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2019-05-14</version>
+<version>2019-11-22</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -98,9 +98,8 @@
   Package <pkg>rodd</pkg> provides T-optimal designs, 
   also called optimal discriminating designs (Dette, Melas and Shpilev 2013,
   Dette, Melas  and Guchenko 2014), Package <pkg>acebayes</pkg>
-  calculates optimal Bayesian designs using an approximate coordinate exchange algorithm, 
-  package <pkg>OBsMD</pkg> provides "Objective Bayesian Model Discrimination in Follow-Up Designs" 
-  according to Consonni and Deldossi (2015). Further optimal design packages for 
+  calculates optimal Bayesian designs using an approximate coordinate exchange algorithm.
+  Further optimal design packages for 
   very specific purposes are listed at the end of this view.
   </li> 
   <li>Package <pkg>conf.design</pkg> allows 
@@ -213,9 +212,7 @@
   <li><pkg>BsMD</pkg> provides Bayesian charts as
   proposed by Box and Meyer (1986) as well as effects plots (normal, half-normal and
   Lenth) for assessing which effects are active in a fractional factorial experiment
-  with 2-level factors; package <pkg>OBsMD</pkg> provides the functionality for follow-
-  up experiments for resolving ambiguities after applying the Bayesian analysis of package 
-  <pkg>BsMD</pkg>. </li>
+  with 2-level factors. </li>
   <li>Package <pkg>unrepx</pkg> provides a battery of methods for the assessment 
   of effect estimates from unreplicated factorial experiments, including many of 
   the effects plots also present in other packages, but also further possibilities.</li>
@@ -716,7 +713,6 @@
   <pkg>mixexp</pkg>
   <pkg>mkssd</pkg>
   <pkg>mxkssd</pkg>
-  <pkg>OBsMD</pkg>
   <pkg>odr</pkg>
   <pkg>OPDOE</pkg>
   <pkg>optbdmaeAT</pkg>
