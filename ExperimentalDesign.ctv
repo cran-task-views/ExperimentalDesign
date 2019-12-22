@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2019-11-22</version>
+<version>2019-12-22</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -112,9 +112,7 @@
   also provides experts with some series of partially balanced incomplete block designs.</li>
   <li>Package <pkg>crossdes</pkg> creates and analyses cross-over designs of various types (including
   latin squares, mutually orthogonal latin squares and Youden squares) that can for example
-  be used in sensometrics. Package <pkg>Crossover</pkg> also provides crossover designs; 
-  it offers designs from the literature and algorithmic designs, makes use of the 
-  functionality in <pkg>crossdes</pkg> and in addition provides a GUI.</li>
+  be used in sensometrics.</li>
   <li>Package <pkg>DoE.base</pkg> provides full factorial designs with or without blocking 
   (function <code>fac.design</code>) and orthogonal arrays (function <code>oa.design</code>) 
   for main effects experiments 
@@ -661,7 +659,6 @@
   <pkg priority="core">conf.design</pkg>
   <pkg>crmPack</pkg>
   <pkg priority="core">crossdes</pkg>
-  <pkg>Crossover</pkg>
   <pkg>dae</pkg>
   <pkg>daewr</pkg>
   <pkg>designGG</pkg>
