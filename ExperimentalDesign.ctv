@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2019-12-22</version>
+<version>2020-01-12</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -162,7 +162,6 @@
   packages <pkg>powerAnalysis</pkg>, <pkg>powerbydesign</pkg> and <pkg>easypower</pkg> deal with estimating 
   the power, sample size and/or effect size for factorial experiments. Package <pkg>JMdesign</pkg> 
   deals with the power for the special situation of jointly modeling longitudinal and survival data,
-  package <pkg>PwrGSD</pkg> with the power for group sequential designs, 
   package <pkg>powerGWASinteraction</pkg> with the power for interactions in genome wide association studies, 
   package <pkg>ssizeRNA</pkg> with sample size for RNA sequencing experiments, and package <pkg>ssize.fdr</pkg> 
   for sample sizes in microarray experiments (requesting a certain power while limiting the false discovery rate).</li>
@@ -730,7 +729,6 @@
   <pkg>powerAnalysis</pkg>
   <pkg>powerbydesign</pkg>
   <pkg>powerGWASinteraction</pkg>
-  <pkg>PwrGSD</pkg>
   <pkg>qtlDesign</pkg>
   <pkg>qualityTools</pkg>
   <pkg>RcmdrPlugin.DoE</pkg>
