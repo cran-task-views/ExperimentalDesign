@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2020-02-20</version>
+<version>2020-04-05</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -390,8 +390,6 @@
   sensometric studies, e.g., for the triangle test.</li>
   <li>Package <pkg>choiceDes</pkg> creates 
   choice designs with emphasis on discrete choice models and MaxDiff functionality; it is based on optimal designs.
-  Package <pkg>idefix</pkg> provides D-efficient designs for discrete choice experiments based on the multinomial logit model, 
-  and individually adapted designs for the mixed multinomial logit model (Crabbe et al. 2014).
   Package <pkg>support.CEs</pkg> provides tools for creating stated choice designs 
   for market research investigations, based on orthogonal arrays. </li>
   <li>Package <pkg>odr</pkg> creates optimal designs for cluster randomized trials 
@@ -695,7 +693,6 @@
   <pkg>ibd</pkg>
   <pkg>ICAOD</pkg>
   <pkg>JMdesign</pkg>
-  <pkg>idefix</pkg>
   <pkg>lhs</pkg>
   <pkg>LDOD</pkg>
   <pkg>MAMS</pkg>
