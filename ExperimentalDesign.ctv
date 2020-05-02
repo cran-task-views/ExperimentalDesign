@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2020-04-05</version>
+<version>2020-05-02</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -299,9 +299,7 @@
   hypercube designs according to Ba et al. (2015), package <pkg>sFFLHD</pkg> provides 
   sliced full factorial-based latin hypercube designs according to 
   Duan et al. (2017).
-  Package <pkg>simrel</pkg> allows creation of designs for 
-  computer experiments according to the Multi-level binary replacement (MBR) strategy 
-  by Martens et al. (2010). Package <pkg>minimaxdesign</pkg> provides 
+  Package <pkg>minimaxdesign</pkg> provides 
   minimax designs and minimax projection designs according to Mak and Joseph (2016).
   </p>
   
@@ -734,7 +732,6 @@
   <pkg>SensoMineR</pkg>
   <pkg>seqDesign</pkg>
   <pkg>sFFLHD</pkg>
-  <pkg>simrel</pkg>
   <pkg priority="core">skpr</pkg>
   <pkg>SLHD</pkg>
   <pkg>soptdmaeA</pkg>
