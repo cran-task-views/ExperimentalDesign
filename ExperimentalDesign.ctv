@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2020-05-02</version>
+<version>2020-10-19</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -370,7 +370,7 @@
   <ul>
   <li>Package <pkg>desirability</pkg> provides ways to combine several target criteria into a desirability function in order to simplify
   multi-criteria analysis; desirabilities are also offered as part of package <pkg>qualityTools</pkg>.</li> 
-  <li><pkg>osDesign</pkg> designs studies nested in observational studies, <pkg>designmatch</pkg> can also be useful for this purpose.</li>
+  <li><pkg>designmatch</pkg> can be useful for studies nested in observational studies.</li>
   <li><pkg>qtlDesign</pkg> is for quantitative trait locus designs,</li>
   <li><pkg>toxtestD</pkg> creates optimal designs for binary toxicity tests,</li>
   <li><pkg>hiPOD</pkg> provides optimal designs for pooled next generation sequencing experiments,</li>
@@ -710,7 +710,6 @@
   <pkg>OptimaRegion</pkg>
   <pkg>OptInterim</pkg>
   <pkg>optrcdmaeAT</pkg>
-  <pkg>osDesign</pkg>
   <pkg>PBIBD</pkg>
   <pkg>PGM2</pkg>
   <pkg>ph2bayes</pkg>
