@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2020-10-19</version>
+<version>2020-11-05</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -299,8 +299,6 @@
   hypercube designs according to Ba et al. (2015), package <pkg>sFFLHD</pkg> provides 
   sliced full factorial-based latin hypercube designs according to 
   Duan et al. (2017).
-  Package <pkg>minimaxdesign</pkg> provides 
-  minimax designs and minimax projection designs according to Mak and Joseph (2016).
   </p>
   
   <p>Package <pkg>tgp</pkg> is another package dedicated to planning and analysing 
@@ -697,7 +695,6 @@
   <pkg>MaxPro</pkg>
   <pkg>MBHdesign</pkg>
   <pkg>minimalRSD</pkg>
-  <pkg>minimaxdesign</pkg>
   <pkg>mixexp</pkg>
   <pkg>mkssd</pkg>
   <pkg>mxkssd</pkg>
