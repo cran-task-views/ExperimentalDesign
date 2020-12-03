@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2020-11-05</version>
+<version>2020-12-03</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -336,8 +336,7 @@
   <li>Package <pkg>asd</pkg> implements adaptive seamless designs (see e.g. Parsons et al. 2012).</li> 
   <li>Package <pkg>OptInterim</pkg> is for two- and three-stage designs for longterm binary endpoints.</li> 
   <li>Packages <pkg>bcrm</pkg> and <pkg>crmPack</pkg> offer Bayesian CRM designs.</li>
-  <li>Package <pkg>MAMS</pkg> offers designs for multi-arm multi stage studies, <pkg>BayesMAMS</pkg> provides a 
-  Bayesian sample size calculations for these.</li>
+  <li>Package <pkg>MAMS</pkg> offers designs for multi-arm multi stage studies.</li>
   <li>Package <pkg>BOIN</pkg> provides Bayesian optimal interval designs, which are used in phase I clinical 
   trials for finding the maximum tolerated dose. </li>
   <li>The <pkg>DoseFinding</pkg> package provides functions for the design and analysis 
@@ -637,7 +636,6 @@
   <pkg>ALTopt</pkg>
   <pkg>asd</pkg>
   <pkg>BatchExperiments</pkg>
-  <pkg>BayesMAMS</pkg>
   <pkg>bcrm</pkg>
   <pkg>BHH2</pkg>
   <pkg>binseqtest</pkg>
