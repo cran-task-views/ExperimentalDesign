@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2021-02-25</version>
+<version>2021-06-10Int</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -374,7 +374,6 @@
   two-colour cDNA microarray experiments, with optimality according to an A-, MV-, D- or E-criterion.</li>
   <li>Package <pkg>docopulae</pkg> implements optimal designs for copula models according to 
   Perrone and Mueller (2016),</li> 
-  <li><pkg>optDesignSlopeInt</pkg> provides an optimal design for the estimation of the ratio of slope to intercept, and</li>
   <li>Package <pkg>MBHdesign</pkg> provides spatially balanced designs, 
   allowing the inclusion of prespecified (legacy) sites. The more elaborate package <pkg>geospt</pkg> 
   allows to optimize spatial networks of sampling points (see e.g. Santacruz, Rubiano and Melo 2014).</li>
@@ -696,7 +695,6 @@
   <pkg>odr</pkg>
   <pkg>OPDOE</pkg>
   <pkg>optbdmaeAT</pkg>
-  <pkg>optDesignSlopeInt</pkg>
   <pkg>OptGS</pkg>
   <pkg>OptimalDesign</pkg>
   <pkg>OptimaRegion</pkg>
