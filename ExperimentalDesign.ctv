@@ -323,7 +323,7 @@
   <li>Package <pkg>ThreeArmedTrials</pkg> provides design and analysis tools for three-armed 
   superiority or non-inferiority trials. Beside the standard functionality, the package 
   includes the negative Binomial response situation discussed in Muetze et al. (2016).</li>  
-  <li>Package <pkg>gsDesign</pkg> implements group sequential designs, package <pkg>GroupSeq</pkg> 
+  <li>Package <pkg>GroupSeq</pkg> 
   gives a GUI for probability spending in such designs,  
   package <pkg>OptGS</pkg> near-optimal balanced group sequential designs. 
   Package <pkg>gset</pkg> handles group sequential equivalence testing. Package <pkg>seqDesign</pkg> 
@@ -675,7 +675,6 @@
   <pkg>geospt</pkg>
   <pkg>granova</pkg>
   <pkg>GroupSeq</pkg>
-  <pkg>gsDesign</pkg>
   <pkg>gset</pkg>
   <pkg>hiPOD</pkg>
   <pkg>ibd</pkg>
