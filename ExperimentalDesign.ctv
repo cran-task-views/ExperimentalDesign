@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2021-06-10Int</version>
+<version>2021-06-20</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -326,7 +326,6 @@
   <li>Package <pkg>gsDesign</pkg> implements group sequential designs, package <pkg>GroupSeq</pkg> 
   gives a GUI for probability spending in such designs,  
   package <pkg>OptGS</pkg> near-optimal balanced group sequential designs. 
-  Package <pkg>gsbDesign</pkg> evaluates operating characteristics for group sequential Bayesian designs.
   Package <pkg>gset</pkg> handles group sequential equivalence testing. Package <pkg>seqDesign</pkg> 
   handles group sequential two-stage treatment efficacy trials with time-to-event endpoints.</li> 
   <li>Package <pkg>binseqtest</pkg> handles sequential single arm binary response trials.</li>
@@ -676,7 +675,6 @@
   <pkg>geospt</pkg>
   <pkg>granova</pkg>
   <pkg>GroupSeq</pkg>
-  <pkg>gsbDesign</pkg>
   <pkg>gsDesign</pkg>
   <pkg>gset</pkg>
   <pkg>hiPOD</pkg>
