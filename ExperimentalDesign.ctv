@@ -4,7 +4,7 @@
 <name>ExperimentalDesign</name>
 <topic>Design of Experiments (DoE) &amp; Analysis of Experimental Data</topic>
 <maintainer email="groemping@bht-berlin.de">Ulrike Groemping</maintainer>
-<version>2021-06-20</version>
+<version>2021-11-30</version>
 
 <info>
   <p>This task view collects information on R packages for experimental design
@@ -341,9 +341,6 @@
   described in Bornkamp, Pinheiro and Bretz 2009) with a special type of optimal designs for 
   dose finding situations (MED-optimal designs, or D-optimal designs, or a mixture of both; 
   cf., Dette et al. 2008).</li> 
-  <li>Package <pkg>VNM</pkg> provides multi-objective optimal designs for simultaneously optimizing 
-  inference about the shape of the dose-response curve, ED50 and minimum effective dose (MED) for certain classes of 
-  logistic models. </li>
   <li>Package <pkg>TEQR</pkg> 
   provides toxicity equivalence range designs (Blanchard and Longmate 2010) for phase I clinical trials, 
   package <pkg>pipe.design</pkg> so-called <i>product of independent beta probabilities dose escalation</i> (PIPE) 
@@ -732,7 +729,6 @@
   <pkg>vdg</pkg>
   <pkg>Vdgraph</pkg>
   <pkg>VdgRsm</pkg>
-  <pkg>VNM</pkg>
 </packagelist>
 
 <links>
