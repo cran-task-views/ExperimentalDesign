@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping
 email: groemping@bht-berlin.de
-version: 2021-12-27
+version: 2022-01-24
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
@@ -185,9 +185,7 @@ visualization of factorial experiments based on package "ggplot2".
     interesting sample size estimation functionality, but is almost
     unusable without the book (the first edition of which I would not
     recommend buying).
--   Package `r pkg("blockTools")` assigns units to blocks in
-    order to end up with homogeneous sets of blocks in case of too small
-    block sizes; package `r pkg("blocksdesign")` permits the
+-   Package `r pkg("blocksdesign")` permits the
     creation of nested block structures.
 -   There are several packages for determining sample sizes in
     experimental contexts, some of them quite general, others very
