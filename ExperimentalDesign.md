@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping
 email: groemping@bht-berlin.de
-version: 2022-01-24
+version: 2022-03-08
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
@@ -103,8 +103,6 @@ visualization of factorial experiments based on package "ggplot2".
 -   Package `r pkg("ICAOD")` implements the "Imperialist
     Competitive Algorithm for Optimal Designs" for nonlinear models
     according to Masoudi, Holling and Wong (2016). Package
-    `r pkg("LDOD")` implements locally D-optimal designs for
-    some nonlinear and generalized linear models and package
     `r pkg("PopED")` provides optimal designs for nonlinear
     mixed effect models.
 -   There are various further packages that deal with optimal designs of
