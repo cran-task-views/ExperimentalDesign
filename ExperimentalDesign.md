@@ -1,19 +1,17 @@
 ---
 name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
-maintainer: Ulrike Groemping
-email: groemping@bht-berlin.de
+maintainer: Ulrike Groemping, Tyler Morgan-Wall
+email: ulrike.groemping@bht-berlin.de
 version: 2022-03-08
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
 This task view collects information on R packages for experimental
-design and analysis of data from experiments. With a strong increase in
-the number of relevant packages, packages that focus on analysis only
-and do not make relevant contributions for design creation are no longer
-added to this task view. Please feel free to suggest enhancements, and
+design and analysis of data from experiments. Packages that focus on analysis only
+and do not make relevant contributions for design creation are not considered in the scope of this task view. Please feel free to suggest enhancements, and
 please send information on new packages or major package updates if you
-think they belong here, either via e-mail to the maintainer or by
+think they belong here, either via e-mail to the maintainers or by
 submitting an issue or pull request in the GitHub repository linked above.
 
 Experimental design is applied in many areas, and methods have been
@@ -30,9 +28,9 @@ course, the division into fields is not always clear-cut, and some
 packages from the more specialized sections can also be applied in
 general contexts.
 
-You may also notice that my own experience is mainly from industrial
+You may also notice that the maintainers' experience is mainly from industrial
 experimentation (in a broad sense), which may explain a somewhat biased
-view on things.
+view on things. Volunteers for co-maintaining are welcome.
 
 ### Experimental designs for agricultural and plant breeding experiments
 
