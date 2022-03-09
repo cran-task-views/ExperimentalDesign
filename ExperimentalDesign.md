@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping, Tyler Morgan-Wall
 email: ulrike.groemping@bht-berlin.de
-version: 2022-03-08
+version: 2022-03-09
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
@@ -352,6 +352,7 @@ designs as introduced by Joseph, Gul and Ba(2015). Package
 designs according to Ba et al. (2015), package
 `r pkg("sFFLHD")` provides sliced full factorial-based latin
 hypercube designs according to Duan et al. (2017).
+Package `r pkg("SOAs")` provides stratum (aka strong) orthogonal arrays by various authors, as described in Grömping (2021) and references therein.
 
 Package `r pkg("tgp")` is another package dedicated to
 planning and analysing computer experiments. Here, emphasis is on
@@ -569,6 +570,8 @@ design:
     , 505-517.
 -   Groemping, U. and Xu, H. (2014). Generalized resolution for
     orthogonal arrays. *The Annals of Statistics* **42** 918-939.
+-   Groemping, U. (2021). A unified implementation of stratum (aka strong) orthogonal
+    arrays. [Report 01/2021](http://www1.bht-berlin.de/FB_II/reports/Report-2021-001.pdf), Department II, BHT Berlin. 
 -   Harman R., Filova L. (2014): Computing efficient exact designs of
     experiments using integer quadratic programming, *Computational
     Statistics and Data Analysis* **71** 1159-1167
