@@ -162,14 +162,14 @@ visualization of factorial experiments based on package "ggplot2".
     (R-package gurobi delivered with the software) or
     [Mosek](https://www.mosek.com/documentation/) (R-package Rmosek
     downloadable from the vendor (an outdated version is on CRAN)).
--   Package `r pkg("dae")` provides various utility
-    functions around experimental design and R factors, e.g. a
-    randomization routine that can handle various nested structures
-    (according to Bailey 1981) and functions for combining several
-    factors into one or dividing one factor into several factors.
-    Furthermore, the package provides features for post-processing
-    objects returned by the `aov()` function, e.g. extraction of Yates
-    effects for 2-level experiments.
+-   Package `r pkg("dae")` provides various utility functions around 
+    experimental design and manipulating R factors, e.g. a routine for randomizing 
+    (according to Bailey 1981) most crossed and nested structures, 
+    a function that can produce, for any design, a skeleton-ANOVA table that 
+    displays the confounding and aliasing inherent in the design, 
+    and functions for plotting designs using R package "ggplot2". 
+    Furthermore, the package provides post-processing of objects 
+    returned by the `aov()` function.
 -   Package `r pkg("daewr")` accompanies the book *Design
     and Analysis of Experiments with R* by Lawson (2014) and does not
     only provide data sets from the book but also some standalone
