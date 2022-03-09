@@ -83,12 +83,11 @@ visualization of factorial experiments based on package "ggplot2".
     of factors sum to 1=100%; lattice designs are created only) and
     creates D-, A-, or I-optimal designs exactly or approximately,
     possibly with blocking, using the Federov (1972) algorithm.
--   Package `r pkg("skpr", priority = "core")` also provides
+-   Package `r pkg("skpr", priority = "core")` (Morgan-Wall and Khoury, 2021) also provides
     optimal designs (D, I, A, Alias, G, T, or E optimal); a selection of
     the optimality criteria can also be used for the stepwise creation
     of split-plot designs. The package can also assess the power of
-    designs and display diagnostic plots. At the moment (October 2017),
-    the algorithms used are not yet documented.
+    designs and display diagnostic plots. 
 -   Package `r pkg("OptimalDesign")` likewise calculates
     unblocked D-, A-, or I-optimal designs (they use "IV-optimal"
     instead of "I-optimal") exactly or approximately, treating
@@ -621,6 +620,8 @@ design:
     Experimentation.* Springer, New York.
 -   Montgomery, D. C. (2005, 6th ed.). *Design and Analysis of
     Experiments.* Wiley, New York.
+-   Morgan-Wall T, Khoury G (2021). [Optimal Design Generation and Power Evaluation in R: The skpr Package.](https://doi.org/10.18637/jss.v099.i01)
+    *Journal of Statistical Software*, **99** (1), 1-36. doi: 10.18637/jss.v099.i01.    
 -   Muetze,T., Munk, A. and Friede, T. (2016). Design and analysis of
     three-arm trials with negative binomially distributed endpoints.
     *Statistics in Medicine* **35** (4) 505-521.
