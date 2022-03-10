@@ -477,7 +477,11 @@ design:
     for sensometric studies, e.g., for the triangle test.
 -   Package `r pkg("choiceDes")` creates choice designs with
     emphasis on discrete choice models and MaxDiff functionality; it is
-    based on optimal designs. Package `r pkg("support.CEs")`
+    based on optimal designs. Package `r pkg("idefix")` provides 
+    D-efficient designs for discrete choice experiments 
+    based on the multinomial logit model, and individually adapted designs 
+    for the mixed multinomial logit model (Crabbe et al. 2014). 
+    Package `r pkg("support.CEs")`
     provides tools for creating stated choice designs for market
     research investigations, based on orthogonal arrays.
 -   Package `r pkg("odr")` creates optimal designs for
