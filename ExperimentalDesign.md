@@ -107,7 +107,9 @@ visualization of factorial experiments based on package "ggplot2".
     T-optimal designs, also called optimal discriminating designs
     (Dette, Melas and Shpilev 2013, Dette, Melas and Guchenko 2014),
     Package `r pkg("acebayes")` calculates optimal Bayesian
-    designs using an approximate coordinate exchange algorithm. Further
+    designs using an approximate coordinate exchange algorithm, package `r pkg("OBsMD")`
+    provides "Objective Bayesian Model Discrimination in Follow-Up Designs" 
+    according to Consonni and Deldossi (2015). Further
     optimal design packages for very specific purposes are listed at the
     end of this view.
 -   Package `r pkg("conf.design", priority = "core")` allows
