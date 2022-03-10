@@ -134,7 +134,10 @@ visualization of factorial experiments based on package "ggplot2".
 -   Package `r pkg("crossdes", priority = "core")` creates
     and analyses cross-over designs of various types (including latin
     squares, mutually orthogonal latin squares and Youden squares) that
-    can for example be used in sensometrics.
+    can for example be used in sensometrics. Package `r pkg("Crossover")` 
+    also provides crossover designs; it offers designs from the literature and
+    algorithmic designs, makes use of the functionality in `r pkg("crossdes")` 
+    and in addition provides a GUI.
 -   Package `r pkg("DoE.base", priority = "core")` provides
     full factorial designs with or without blocking (function
     `fac.design`) and orthogonal arrays (function `oa.design`) for main
