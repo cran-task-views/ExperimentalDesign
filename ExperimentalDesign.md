@@ -203,6 +203,7 @@ visualization of factorial experiments based on package "ggplot2".
     sample size and/or effect size for factorial experiments. Package
     `r pkg("JMdesign")` deals with the power for the special
     situation of jointly modeling longitudinal and survival data,
+    package `r pkg("PwrGSD")` with the power for group sequential designs,
     package `r pkg("powerGWASinteraction")` with the power
     for interactions in genome wide association studies, package
     `r pkg("ssizeRNA")` with sample size for RNA sequencing
