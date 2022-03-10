@@ -365,7 +365,11 @@ designs as introduced by Joseph, Gul and Ba(2015). Package
 designs according to Ba et al. (2015), package
 `r pkg("sFFLHD")` provides sliced full factorial-based latin
 hypercube designs according to Duan et al. (2017).
-Package `r pkg("SOAs")` provides stratum (aka strong) orthogonal arrays by various authors, as described in Grömping (2021) and references therein.
+ Package `r pkg("simrel")` allows creation of designs for 
+ computer experiments according to the Multi-level binary 
+ replacement (MBR) strategy by Martens et al. (2010). 
+ Package `r pkg("minimaxdesign")` provides minimax designs 
+ and minimax projection designs according to Mak and Joseph (2016). Package `r pkg("SOAs")` provides stratum (aka strong) orthogonal arrays by various authors, as described in Grömping (2021) and references therein.
 
 Package `r pkg("tgp")` is another package dedicated to
 planning and analysing computer experiments. Here, emphasis is on
