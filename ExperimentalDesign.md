@@ -453,8 +453,8 @@ design:
 -   Package `r pkg("desirability")` provides ways to combine
     several target criteria into a desirability function in order to
     simplify multi-criteria analysis.
--   `r pkg("designmatch")` can be useful for studies nested
-    in observational studies.
+-   `r pkg("osDesign")` designs studies nested in observational studies, 
+    `r pkg("designmatch")` can also be useful for this purpose.
 -   `r pkg("qtlDesign")` is for quantitative trait locus
     designs,
 -   `r pkg("toxtestD")` creates optimal designs for binary
