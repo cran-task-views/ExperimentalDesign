@@ -115,6 +115,13 @@ visualization of factorial experiments based on package "ggplot2".
     blocks (function `conf.design()`) and allows to combine existing
     designs in several ways (e.g., useful for Taguchi's inner and outer
     array designs in industrial experimentation).
+-   The archived package "planor" allows to generate regular 
+    fractional factorial designs with fixed and mixed levels 
+    and quite flexible randomization structures. The packages flexibility 
+    comes at the price of a certain complexity and - for larger designs - high computing
+    time. It is listed here in spite of being archived on CRAN, 
+    because it still works and can create some designs that cannot created 
+    by any other packages.
 -   Package `r pkg("ibd")` creates and analyses incomplete
     block designs. Packages `r pkg("PGM2")`,
     `r pkg("RPPairwiseDesign")` and
