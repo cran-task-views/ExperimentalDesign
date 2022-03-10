@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping, Tyler Morgan-Wall
 email: ulrike.groemping@bht-berlin.de
-version: 2022-03-09
+version: 2022-03-10
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
