@@ -400,7 +400,8 @@ task view.
     trials. Beside the standard functionality, the package includes the
     negative Binomial response situation discussed in Muetze et al.
     (2016).
--   Package `r pkg("GroupSeq")` gives a GUI for probability
+-   Package `r pkg("gsDesign")` implements group sequential designs, 
+    package `r pkg("GroupSeq")` gives a GUI for probability
     spending in such designs, package `r pkg("OptGS")`
     near-optimal balanced group sequential designs. Package
     `r pkg("gset")` handles group sequential equivalence
