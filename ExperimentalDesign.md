@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping, Tyler Morgan-Wall
 email: ulrike.groemping@bht-berlin.de
-version: 2022-03-10
+version: 2022-07-07
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
@@ -392,6 +392,9 @@ This task view only covers specific design of experiments packages
 areas. Please, also consult the [ClinicalTrials](ClinicalTrials.html)
 task view.
 
+-   Package `r pkg("adaptr")` uses Bayesian methods to simulate adaptive 
+    clinical trials using adaptive stopping, adaptive arm dropping, and/or 
+    adaptive randomisation. 
 -   Package `r pkg("experiment")` contains tools for
     clinical experiments, e.g., a randomization tool, and it provides a
     few special analysis options for clinical trials.
@@ -574,6 +577,10 @@ design:
     Semiparametric Nonlinear Regression and Design by Treed Gaussian
     Process Models](http://www.jstatsoft.org/v19/i09/paper) . *Journal
     of Statistical Software* **19** (9) 1-46.
+-   Granholm A, Jensen AKG, Lange T, Kaas-Hansen B (2022). 
+    *adaptr: an R package for simulating and comparing adaptive clinical 
+    trials*. Journal of Open Source Software, 7(72), 4284. DOI: 
+    [10.21105/joss.04284](https://doi.org/10.21105/joss.04284)
 -   Groemping, U. (2011). [Tutorial for designing experiments using the
     R package
     RcmdrPlugin.DoE](http://www1.beuth-hochschule.de/FB_II/reports/Report-2011-004.pdf)
