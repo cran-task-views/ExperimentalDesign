@@ -71,9 +71,6 @@ variance models with fixed and/or random effects and also nested effects
 (the latter can only be random); they quote Underwood (1997) for this
 work. The package is quite valuable, as many users have difficulties
 with using the R packages for handling random or mixed effects. Package
-`r pkg("granova")` offers some interesting non-standard
-graphical representations for results of simply-structured experiments
-(one-way and two-way layouts, paired data), package
 `r pkg("ez")` aims at supporting intuitive analysis and
 visualization of factorial experiments based on package "ggplot2".
 
@@ -197,7 +194,6 @@ visualization of factorial experiments based on package "ggplot2".
 -   There are several packages for determining sample sizes in
     experimental contexts, some of them quite general, others very
     specialized. All of these are mentioned here: packages
-    `r pkg("powerAnalysis")`,
     `r pkg("powerbydesign")` and
     `r pkg("easypower")` deal with estimating the power,
     sample size and/or effect size for factorial experiments. Package
@@ -309,11 +305,8 @@ factors (cf. e.g. Myers and Montgomery 1995):
     for inspecting the optimal region of a response surface for
     quadratic polynomials and thin-plate spline models and can compute a
     confidence interval for the distance between two optima.
--   Package `r pkg("Vdgraph")` implements a variance
-    dispersion graph (Vining 1993) for response surface designs created
-    by package `r pkg("rsm")`. Packages
-    `r pkg("VdgRsm")` and `r pkg("vdg")` provide
-    similar functionality with more variety.
+-   Package `r pkg("vdg")` creates variance
+    dispersion graphs (Vining 1993) using Monte Carlo sampling.
 -   Package `r pkg("EngrExpt")` provides a collection of
     data sets from the book *Introductory Statistics for Engineering
     Experimentation* by Nelson, Coffin and Copeland (2003).
@@ -412,8 +405,6 @@ task view.
     arm binary response trials.
 -   Package `r pkg("asd")` implements adaptive seamless
     designs (see e.g. Parsons et al. 2012).
--   Package `r pkg("OptInterim")` is for two- and
-    three-stage designs for longterm binary endpoints.
 -   Packages `r pkg("bcrm")` and
     `r pkg("crmPack")` offer Bayesian CRM designs.
 -   Package `r pkg("MAMS")` offers designs for multi-arm
@@ -458,12 +449,6 @@ design:
     `r pkg("designmatch")` can also be useful for this purpose.
 -   `r pkg("qtlDesign")` is for quantitative trait locus
     designs,
--   `r pkg("toxtestD")` creates optimal designs for binary
-    toxicity tests,
--   `r pkg("hiPOD")` provides optimal designs for pooled
-    next generation sequencing experiments,
--   `r pkg("designGG")` creates optimal designs for
-    genetical genomics experiments (see Li et al. 2009),
 -   packages `r pkg("optbdmaeAT")`,
     `r pkg("optrcdmaeAT")` and
     `r pkg("soptdmaeA")` provide optimal block designs,
