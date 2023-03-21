@@ -189,8 +189,10 @@ visualization of factorial experiments based on package "ggplot2".
     interesting sample size estimation functionality, but is almost
     unusable without the book (the first edition of which I would not
     recommend buying).
--   Package `r pkg("blocksdesign")` permits the
-    creation of nested block structures.
+-   Package `r pkg("blockTools")` assigns units to blocks in order to end up 
+    with homogeneous sets of blocks in case of too small block sizes and 
+    offers further functionality for randomization and reporting; 
+    package `r pkg("blocksdesign")` permits the creation of nested block structures.
 -   There are several packages for determining sample sizes in
     experimental contexts, some of them quite general, others very
     specialized. All of these are mentioned here: packages
