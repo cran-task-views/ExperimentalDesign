@@ -448,8 +448,6 @@ design:
     simplify multi-criteria analysis.
 -   `r pkg("osDesign")` designs studies nested in observational studies, 
     `r pkg("designmatch")` can also be useful for this purpose.
--   `r pkg("qtlDesign")` is for quantitative trait locus
-    designs,
 -   packages `r pkg("optbdmaeAT")`,
     `r pkg("optrcdmaeAT")` and
     `r pkg("soptdmaeA")` provide optimal block designs,
