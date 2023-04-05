@@ -611,10 +611,6 @@ design:
 -   Lenth, R.V. (2009). [Response-Surface Methods in R, Using
     rsm](http://www.jstatsoft.org/v32/i07/paper) . *Journal of
     Statistical Software* **32** (7) 1-17.
--   Y. Li, M. Swertz, G. Vera, J. Fu, R. Breitling, and R.C. Jansen.
-    `r pkg("designGG")`: An R-package and Web tool for the
-    optimal design of genetical genomics experiments. *BMC
-    Bioinformatics* **10** :188
 -   Mak, S., and Joseph, V.R. (2016). Minimax designs using clustering.
     *Journal of Computational and Graphical Statistics* . In revision.
 -   Martens, H., Mage, I., Tondel, K., Isaeva, J., Hoy, M. and Saebo, S.
