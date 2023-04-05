@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping, Tyler Morgan-Wall
 email: ulrike.groemping@bht-berlin.de
-version: 2022-12-13
+version: 2023-04-05
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
@@ -398,9 +398,8 @@ task view.
 -   Package `r pkg("gsDesign")` implements group sequential designs, 
     package `r pkg("GroupSeq")` gives a GUI for probability
     spending in such designs, package `r pkg("OptGS")`
-    near-optimal balanced group sequential designs. Package
-    `r pkg("gset")` handles group sequential equivalence
-    testing. Package `r pkg("seqDesign")` handles group
+    near-optimal balanced group sequential designs.
+    Package `r pkg("seqDesign")` handles group
     sequential two-stage treatment efficacy trials with time-to-event
     endpoints.
 -   Package `r pkg("binseqtest")` handles sequential single
