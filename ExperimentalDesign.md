@@ -424,9 +424,7 @@ task view.
     range designs (Blanchard and Longmate 2010) for phase I clinical
     trials, package `r pkg("pipe.design")` so-called
     *product of independent beta probabilities dose escalation* (PIPE)
-    designs for phase I. Package `r pkg("dfpk")` implements
-    a Bayesian dose-finding design using pharmacokinetics for phase I
-    trials. Package `r pkg("dfcrm")` provides designs for
+    designs for phase I. Package `r pkg("dfcrm")` provides designs for
     classical or TITE continual reassessment trials in phase I.
 -   Packages `r pkg("dfcomb")` and
     `r pkg("dfmta")` provide phase I/II adaptive
