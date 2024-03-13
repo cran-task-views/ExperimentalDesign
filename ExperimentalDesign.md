@@ -474,8 +474,6 @@ design:
 -   Package `r pkg("odr")` creates optimal designs for
     cluster randomized trials under condition- and unit-specific cost
     structures.
--   Package `r pkg("bioOED")` offers sensitivity analysis
-    and optimal design for microbial inactivation.
 
 ### Key references for packages in this task view
 
