@@ -207,7 +207,13 @@ visualization of factorial experiments based on package "ggplot2".
     `r pkg("ssizeRNA")` with sample size for RNA sequencing
     experiments, and package `r pkg("ssize.fdr")` for sample
     sizes in microarray experiments (requesting a certain power while
-    limiting the false discovery rate).
+    limiting the false discovery rate). Package `r pkg("PowerUpR")` 
+    calculates power, effect size, and sample size for 
+    multilevel experiments. Package `r pkg("PUMP")` estimates 
+    these quantities for multilevel experiments with multiple outcomes, 
+    and also allows for easy exploration of sensitivity to 
+    different choices of parameter values.
+
 
 ### Experimental designs for industrial experiments
 
