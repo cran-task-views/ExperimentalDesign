@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping, Tyler Morgan-Wall
 email: ulrike.groemping@bht-berlin.de
-version: 2023-04-05
+version: 2025-01-29
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
@@ -363,8 +363,7 @@ hypercube designs according to Duan et al. (2017).
  Package `r pkg("simrel")` allows creation of designs for 
  computer experiments according to the Multi-level binary 
  replacement (MBR) strategy by Martens et al. (2010). 
- Package `r pkg("minimaxdesign")` provides minimax designs 
- and minimax projection designs according to Mak and Joseph (2016). Package `r pkg("SOAs")` provides stratum (aka strong) orthogonal arrays by various authors, as described in Grömping (2021) and references therein.
+ Package `r pkg("SOAs")` provides stratum (aka strong) orthogonal arrays by various authors, as described in Grömping (2021) and references therein.
 
 Package `r pkg("tgp")` is another package dedicated to
 planning and analysing computer experiments. Here, emphasis is on
@@ -607,8 +606,6 @@ design:
 -   Lenth, R.V. (2009). [Response-Surface Methods in R, Using
     rsm](http://www.jstatsoft.org/v32/i07/paper) . *Journal of
     Statistical Software* **32** (7) 1-17.
--   Mak, S., and Joseph, V.R. (2016). Minimax designs using clustering.
-    *Journal of Computational and Graphical Statistics* . In revision.
 -   Martens, H., Mage, I., Tondel, K., Isaeva, J., Hoy, M. and Saebo, S.
     (2010). Multi-level binary replacement (MBR) design for computer
     experiments in high-dimensional nonlinear systems, *J. Chemom.*
