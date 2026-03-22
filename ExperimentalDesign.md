@@ -394,11 +394,6 @@ task view.
 -   Package `r pkg("experiment")` contains tools for
     clinical experiments, e.g., a randomization tool, and it provides a
     few special analysis options for clinical trials.
--   Package `r pkg("ThreeArmedTrials")` provides design and
-    analysis tools for three-armed superiority or non-inferiority
-    trials. Beside the standard functionality, the package includes the
-    negative Binomial response situation discussed in Muetze et al.
-    (2016).
 -   Package `r pkg("gsDesign")` implements group sequential designs, 
     package `r pkg("GroupSeq")` gives a GUI for probability
     spending in such designs, package `r pkg("OptGS")`
@@ -625,9 +620,6 @@ design:
     Experiments.* Wiley, New York.
 -   Morgan-Wall T, Khoury G (2021). [Optimal Design Generation and Power Evaluation in R: The skpr Package.](https://doi.org/10.18637/jss.v099.i01)
     *Journal of Statistical Software*, **99** (1), 1-36. doi: 10.18637/jss.v099.i01.    
--   Muetze,T., Munk, A. and Friede, T. (2016). Design and analysis of
-    three-arm trials with negative binomially distributed endpoints.
-    *Statistics in Medicine* **35** (4) 505-521.
 -   Myers, R. H. and Montgomery, D. C. (1995). *Response Surface
     Methodology: Process and Product Optimization Using Designed
     Experiments.* Wiley, New York.
