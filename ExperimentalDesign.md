@@ -3,7 +3,7 @@ name: ExperimentalDesign
 topic: Design of Experiments (DoE) & Analysis of Experimental Data
 maintainer: Ulrike Groemping, Tyler Morgan-Wall
 email: ulrike.groemping@bht-berlin.de
-version: 2025-01-29
+version: 2026-03-22
 source: https://github.com/cran-task-views/ExperimentalDesign/
 ---
 
@@ -238,7 +238,7 @@ industrial experimentation.
     fractional factorials of 2-level factors, regardless whether they
     have been created with the package or not.  
     Fractional factorial 2-level plans can also be created by other R
-    packages, namely `r pkg("BHH2")`, or with a little bit
+    packages, namely `r pkg("BHH2")` or `r pkg("adas.utils")`, or with a little bit
     more complication by packages `r pkg("conf.design")` or
     `r pkg("AlgDesign")`. Package
     `r pkg("ALTopt")` provides optimal designs for
@@ -253,6 +253,11 @@ industrial experimentation.
     effect sizes relative to residuals, and the function `lambdaPlot()`
     assesses the effect of Box-Cox transformations on statistical
     significance of effects.
+-   Package `r pkg("adas.utils")` designs factorial 
+    plans, fractional factorial plans, and central composite designs.
+    It is based on Montgomery (2005). 
+    The package includes analysis of aliases in generators, 
+    and it provides graphical tools for the gg world.
 -   `r pkg("BsMD")` provides Bayesian charts as proposed by
     Box and Meyer (1986) as well as effects plots (normal, half-normal
     and Lenth) for assessing which effects are active in a fractional
