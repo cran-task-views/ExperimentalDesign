@@ -4,21 +4,14 @@ on:
       - main
       - master
     paths:
-      - '.github/workflows/validate-ctv.yml'
+      - '.github/workflows/validate.yml'
       - 'ExperimentalDesign.md'
   pull_request:
     branches:
       - main
       - master
     paths:
-      - '.github/workflows/validate-ctv.yml'
-      - 'ExperimentalDesign.md'
-  workflow_dispatch:
-    branches:
-      - main
-      - master
-    paths:
-      - '.github/workflows/validate-ctv.yml'
+      - '.github/workflows/validate.yml'
       - 'ExperimentalDesign.md'
 
 name: Validate task view
