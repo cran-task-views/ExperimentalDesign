@@ -311,8 +311,6 @@ factors (cf. e.g. Myers and Montgomery 1995):
     for inspecting the optimal region of a response surface for
     quadratic polynomials and thin-plate spline models and can compute a
     confidence interval for the distance between two optima.
--   Package `r pkg("vdg")` creates variance
-    dispersion graphs (Vining 1993) using Monte Carlo sampling.
 -   Package `r pkg("EngrExpt")` provides a collection of
     data sets from the book *Introductory Statistics for Engineering
     Experimentation* by Nelson, Coffin and Copeland (2003).
@@ -666,9 +664,6 @@ design:
     . (The file accompanies the book "Experimental Design with
     Applications in Management, Engineering and the Sciences" by Berger
     and Maurer, 2002.)
--   Vining, G. (1993). A Computer Program for Generating Variance
-    Dispersion Graphs. *Journal of Quality Technology* **25** 45-58.
-    Corrigendum in the same volume, pp. 333-335.
 -   Xu, H. (2009). Algorithmic Construction of Efficient Fractional
     Factorial Designs With Large Run Sizes. *Technometrics* **51**
     262-277.
