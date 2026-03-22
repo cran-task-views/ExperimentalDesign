@@ -190,8 +190,10 @@ visualization of factorial experiments based on package "ggplot2".
     recommend buying).
 -   Package `r pkg("blockTools")` assigns units to blocks in order to end up 
     with homogeneous sets of blocks in case of too small block sizes and 
-    offers further functionality for randomization and reporting; 
-    package `r pkg("blocksdesign")` permits the creation of nested block structures.
+    offers further functionality for randomization and reporting.
+    Moore (2012) discusses such functionality for political science.
+    Package `r pkg("blocksdesign")` permits the creation of nested block
+    structures.
 -   There are several packages for determining sample sizes in
     experimental contexts, some of them quite general, others very
     specialized. All of these are mentioned here: packages
@@ -610,11 +612,12 @@ design:
 -   Masoudi, E., Holling, H. and Wong, W.-K. (2016). Application of
     imperialist competitive algorithm to find minimax and standardized
     maximin optimal designs. *Computational Statistics and Data
-    Analysis* , in press. DOI: 10.1016/j.csda.2016.06.014
+    Analysis*. DOI: 10.1016/j.csda.2016.06.014
 -   Mee, R. (2009). *A Comprehensive Guide to Factorial Two-Level
     Experimentation.* Springer, New York.
 -   Montgomery, D. C. (2005, 6th ed.). *Design and Analysis of
     Experiments.* Wiley, New York.
+-   Moore, Ryan T. (2012) Multivariate Continuous Blocking to Improve Political Science Experiments. Political Analysis, 20(4): 460-479.
 -   Morgan-Wall T, Khoury G (2021). [Optimal Design Generation and Power Evaluation in R: The skpr Package.](https://doi.org/10.18637/jss.v099.i01)
     *Journal of Statistical Software*, **99** (1), 1-36. doi: 10.18637/jss.v099.i01.    
 -   Myers, R. H. and Montgomery, D. C. (1995). *Response Surface
