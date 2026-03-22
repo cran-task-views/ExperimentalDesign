@@ -122,9 +122,8 @@ visualization of factorial experiments based on package "ggplot2".
     because it still works and can create some designs that cannot created 
     by any other packages.
 -   Package `r pkg("ibd")` creates and analyses incomplete
-    block designs. Packages `r pkg("PGM2")`,
-    `r pkg("RPPairwiseDesign")` and
-    `r pkg("CombinS")` all produce designs related to
+    block designs. Packages `r pkg("PGM2")` and
+    `r pkg("CombinS")` both produce designs related to
     (resolvable) (partially) balanced incomplete block designs. Package
     `r pkg("PBIBD")` also provides experts with some series
     of partially balanced incomplete block designs.
