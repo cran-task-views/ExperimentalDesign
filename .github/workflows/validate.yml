@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -7,13 +8,6 @@ on:
       - '.github/workflows/validate-ctv.yml'
       - 'ExperimentalDesign.md'
   pull_request:
-    branches:
-      - main
-      - master
-    paths:
-      - '.github/workflows/validate-ctv.yml'
-      - 'ExperimentalDesign.md'
-  workflow_dispatch:
     branches:
       - main
       - master
