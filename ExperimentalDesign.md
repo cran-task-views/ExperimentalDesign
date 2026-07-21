@@ -428,8 +428,7 @@ task view.
     `r pkg("dfmta")` provide phase I/II adaptive
     dose-finding designs for combination studies or single-agent
     molecularly targeted agent, respectively.
--   Packages `r pkg("ph2bayes")` and
-    `r pkg("ph2bye")` are concerned with Bayesian single arm
+-   Package `r pkg("ph2bayes")` is concerned with Bayesian single arm
     phase II trials.
 -   Package `r pkg("sp23design")` claims to offer seamless
     integration of phase II to III.
