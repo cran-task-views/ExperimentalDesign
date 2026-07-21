@@ -310,10 +310,10 @@ factors (cf. e.g. Myers and Montgomery 1995):
 In some industries, mixtures of ingredients are important; these require
 special designs, because the quantitative factors have a fixed total.
 Mixture designs are handled by packages `r pkg("AlgDesign")`
-(function `gen.mixture`, lattice designs), lattice designs and simplex
-centroid designs), and `r pkg("mixexp")` (several small
-functions for simplex centroid, simplex lattice and extreme vertices
-designs as well as for plotting).
+(function `gen.mixture`, lattice designs and simplex
+centroid designs), and `r pkg("skpr")` (function `gen_design` can generate
+optimal mixture designs when passing a candidate set with the mixture
+constraint applied along with an intercept-less model).
 
 Occasionally, supersaturated designs can be useful. The two small
 packages `r pkg("mkssd")` and `r pkg("mxkssd")`
