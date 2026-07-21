@@ -239,21 +239,11 @@ industrial experimentation.
     fractional factorials of 2-level factors, regardless whether they
     have been created with the package or not.  
     Fractional factorial 2-level plans can also be created by other R
-    packages, namely `r pkg("BHH2")` or `r pkg("adas.utils")`, or with a little bit
+    packages, primarily `r pkg("adas.utils")`, or with a little bit
     more complication by packages `r pkg("conf.design")` or
     `r pkg("AlgDesign")`. Package
     `r pkg("ALTopt")` provides optimal designs for
     accelerated life testing.
--   Package `r pkg("BHH2")` accompanies the 2nd edition of
-    the book by Box, Hunter and Hunter and provides various of its data
-    sets. It can generate full and fractional factorial
-    two-level-designs from a number of factors and a list of defining
-    relations (function `ffDesMatrix()`, less comfortable than package
-    FrF2). It also provides several functions for analyzing data from
-    2-level factorial experiments: The function anovaPlot assesses
-    effect sizes relative to residuals, and the function `lambdaPlot()`
-    assesses the effect of Box-Cox transformations on statistical
-    significance of effects.
 -   Package `r pkg("adas.utils")` designs factorial 
     plans, fractional factorial plans, and central composite designs.
     It is based on Montgomery (2005). 
